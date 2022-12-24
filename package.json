@@ -1,20 +1,35 @@
 {
   "name": "course",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "coverage": "c8 npm test",
+    "lint": "eslint ./ --fix",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AndyGudkoff/Course.git"
   },
-  "keywords": [],
   "author": "Andrei_hudkou2",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AndyGudkoff/Course/issues"
   },
-  "homepage": "https://github.com/AndyGudkoff/Course#readme"
+  "homepage": "https://github.com/AndyGudkoff/Course#readme",
+  "devDependencies": {
+    "eslint": "^8.30.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-promise": "^6.1.1"
+  },
+  "dependencies": {
+    "c8": "^7.12.0",
+    "chai": "^4.3.7",
+    "husky": "^8.0.2",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3"
+  }
 }
