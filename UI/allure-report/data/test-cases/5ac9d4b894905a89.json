@@ -1,0 +1,66 @@
+{
+  "uid" : "5ac9d4b894905a89",
+  "name" : "Check URL contain calendar",
+  "fullName" : "Test suite .Check URL contain calendar",
+  "historyId" : "d67c7c759c96d9b4782411b5fcfd9827",
+  "time" : {
+    "start" : 1672603772996,
+    "stop" : 1672603773381,
+    "duration" : 385
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Test suite "
+  }, {
+    "name" : "testClass",
+    "value" : "Test suite "
+  }, {
+    "name" : "testMethod",
+    "value" : "Check URL contain calendar"
+  }, {
+    "name" : "package",
+    "value" : "Test suite "
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-108.0.5359.125"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "b00385172cf592c2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1672602934835,
+        "stop" : 1672602935239,
+        "duration" : 404
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5ac9d4b894905a89.json",
+  "parameterValues" : [ "chrome-108.0.5359.125" ]
+}

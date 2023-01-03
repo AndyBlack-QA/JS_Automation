@@ -1,0 +1,104 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "Watches Page",
+    "children" : [ {
+      "name" : "should show banner container",
+      "uid" : "49a7b297f0daf9b5",
+      "parentUid" : "17dcdd0f44290db3fd491e590febd600",
+      "status" : "passed",
+      "time" : {
+        "start" : 1672603763406,
+        "stop" : 1672603766892,
+        "duration" : 3486
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-108.0.5359.125" ]
+    }, {
+      "name" : "rightBannerTitle",
+      "uid" : "1d123668b4b20790",
+      "parentUid" : "17dcdd0f44290db3fd491e590febd600",
+      "status" : "passed",
+      "time" : {
+        "start" : 1672603766892,
+        "stop" : 1672603766916,
+        "duration" : 24
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-108.0.5359.125" ]
+    } ],
+    "uid" : "17dcdd0f44290db3fd491e590febd600"
+  }, {
+    "name" : "Test suite ",
+    "children" : [ {
+      "name" : "First test",
+      "uid" : "34a88b5d88555f4a",
+      "parentUid" : "4607332101bb548cfe1432a9db333b68",
+      "status" : "passed",
+      "time" : {
+        "start" : 1672603769142,
+        "stop" : 1672603772621,
+        "duration" : 3479
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-108.0.5359.125" ]
+    }, {
+      "name" : "second Test",
+      "uid" : "c2b6f4ed0ebce619",
+      "parentUid" : "4607332101bb548cfe1432a9db333b68",
+      "status" : "passed",
+      "time" : {
+        "start" : 1672603772621,
+        "stop" : 1672603772939,
+        "duration" : 318
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-108.0.5359.125" ]
+    }, {
+      "name" : "Check that 'Add New Doctor is clickable'",
+      "uid" : "f3cc7189504ce646",
+      "parentUid" : "4607332101bb548cfe1432a9db333b68",
+      "status" : "passed",
+      "time" : {
+        "start" : 1672603772939,
+        "stop" : 1672603772996,
+        "duration" : 57
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-108.0.5359.125" ]
+    }, {
+      "name" : "Check URL contain calendar",
+      "uid" : "5ac9d4b894905a89",
+      "parentUid" : "4607332101bb548cfe1432a9db333b68",
+      "status" : "passed",
+      "time" : {
+        "start" : 1672603772996,
+        "stop" : 1672603773381,
+        "duration" : 385
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-108.0.5359.125" ]
+    }, {
+      "name" : "urlContain CALENDAR",
+      "uid" : "53dd09daf546e59",
+      "parentUid" : "4607332101bb548cfe1432a9db333b68",
+      "status" : "passed",
+      "time" : {
+        "start" : 1672603773381,
+        "stop" : 1672603773388,
+        "duration" : 7
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-108.0.5359.125" ]
+    } ],
+    "uid" : "4607332101bb548cfe1432a9db333b68"
+  } ]
+}

@@ -1,0 +1,61 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1672773619733' stop='1672773638850'>
+    <name>Watches Page</name>
+    <title>Watches Page</title>
+    <test-cases>
+        <test-case start='1672773619733' status='passed' stop='1672773631166'>
+            <name>should show banner container</name>
+            <title>should show banner container</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-108.0.1'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1672773631167' status='passed' stop='1672773631183'>
+            <name>rightBannerTitle</name>
+            <title>rightBannerTitle</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-108.0.1'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1672773631183' status='failed' stop='1672773638850'>
+            <name>Value to the search field</name>
+            <title>Value to the search field</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-108.0.1'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>expect(received).toContain(expected) // indexOf
+                
+                Expected value:  "Apple"
+                Received object: {"addCommand": [Function anonymous], "element-6066-11e4-a52e-4f735466cecf": "73fc9b8f-8b5f-4025-bfce-36fd6a5dbeab", "elementId": "73fc9b8f-8b5f-4025-bfce-36fd6a5dbeab", "emit": [Function bound ], "isReactElement": false, "overwriteCommand": [Function anonymous], "parent": {"addCommand": [Function anonymous], "addLocatorStrategy": [Function anonymous], "capabilities": {"acceptInsecureCerts": true, "browserName": "firefox", "browserVersion": "108.0.1", "moz:accessibilityChecks": false, "moz:buildID": "20221215175817", "moz:geckodriverVersion": "0.32.0", "moz:headless": false, "moz:platformVersion": "10.0", "moz:processID": 24784, "moz:profile": "C:\\Users\\ANDREI~1\\AppData\\Local\\Temp\\rust_mozprofile6mkekn", "moz:shutdownTimeout": 60000, "moz:useNonSpecCompliantPointerOrigin": false, "moz:webdriverClick": true, "moz:windowless": false, "pageLoadStrategy": "normal", "platformName": "windows", "proxy": {}, "setWindowRect": true, "strictFileInteractability": false, "timeouts": {"implicit": 0, "pageLoad": 300000, "script": 30000}, "unhandledPromptBehavior": "dismiss and notify"}, "overwriteCommand": [Function anonymous], "sessionId": "744f660a-6fac-4c16-852c-4678339d17b9"}, "selector": ".srp-controls__count-heading", "sessionId": "744f660a-6fac-4c16-852c-4678339d17b9"}</message>
+                <stack-trace>Error: expect(received).toContain(expected) // indexOf
+                
+                Expected value:  "Apple"
+                Received object: {"addCommand": [Function anonymous], "element-6066-11e4-a52e-4f735466cecf": "73fc9b8f-8b5f-4025-bfce-36fd6a5dbeab", "elementId": "73fc9b8f-8b5f-4025-bfce-36fd6a5dbeab", "emit": [Function bound ], "isReactElement": false, "overwriteCommand": [Function anonymous], "parent": {"addCommand": [Function anonymous], "addLocatorStrategy": [Function anonymous], "capabilities": {"acceptInsecureCerts": true, "browserName": "firefox", "browserVersion": "108.0.1", "moz:accessibilityChecks": false, "moz:buildID": "20221215175817", "moz:geckodriverVersion": "0.32.0", "moz:headless": false, "moz:platformVersion": "10.0", "moz:processID": 24784, "moz:profile": "C:\\Users\\ANDREI~1\\AppData\\Local\\Temp\\rust_mozprofile6mkekn", "moz:shutdownTimeout": 60000, "moz:useNonSpecCompliantPointerOrigin": false, "moz:webdriverClick": true, "moz:windowless": false, "pageLoadStrategy": "normal", "platformName": "windows", "proxy": {}, "setWindowRect": true, "strictFileInteractability": false, "timeouts": {"implicit": 0, "pageLoad": 300000, "script": 30000}, "unhandledPromptBehavior": "dismiss and notify"}, "overwriteCommand": [Function anonymous], "sessionId": "744f660a-6fac-4c16-852c-4678339d17b9"}, "selector": ".srp-controls__count-heading", "sessionId": "744f660a-6fac-4c16-852c-4678339d17b9"}
+                    at Context.&lt;anonymous> (C:\Users\Andrei_Hudkou2\Desktop\Learn\JS\AutomationBase\UI\test\specs\ebay.spec.js:20:36)
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

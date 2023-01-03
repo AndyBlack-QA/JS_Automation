@@ -1,0 +1,108 @@
+{
+  "uid" : "988dd095fc3f9a2d",
+  "name" : "First test",
+  "fullName" : "Test suite .First test",
+  "historyId" : "2284f00ada4c212497e1dfc0ee040646",
+  "time" : {
+    "start" : 1672602930755,
+    "stop" : 1672602934424,
+    "duration" : 3669
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/url",
+      "time" : {
+        "start" : 1672602930757,
+        "stop" : 1672602934416,
+        "duration" : 3659
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "89a7039e7e618c7f",
+        "name" : "Request",
+        "source" : "89a7039e7e618c7f.json",
+        "type" : "application/json",
+        "size" : 89
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /session/:sessionId/title",
+      "time" : {
+        "start" : 1672602934416,
+        "stop" : 1672602934422,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7d99be564922bac3",
+        "name" : "Response",
+        "source" : "7d99be564922bac3.json",
+        "type" : "application/json",
+        "size" : 66
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Test suite "
+  }, {
+    "name" : "testClass",
+    "value" : "Test suite "
+  }, {
+    "name" : "testMethod",
+    "value" : "First test"
+  }, {
+    "name" : "package",
+    "value" : "Test suite "
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-108.0.5359.125"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "988dd095fc3f9a2d.json",
+  "parameterValues" : [ "chrome-108.0.5359.125" ]
+}

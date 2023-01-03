@@ -1,0 +1,66 @@
+{
+  "uid" : "f3cc7189504ce646",
+  "name" : "Check that 'Add New Doctor is clickable'",
+  "fullName" : "Test suite .Check that 'Add New Doctor is clickable'",
+  "historyId" : "446d5d9633ca2e497da6a3e85f4d9e02",
+  "time" : {
+    "start" : 1672603772939,
+    "stop" : 1672603772996,
+    "duration" : 57
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Test suite "
+  }, {
+    "name" : "testClass",
+    "value" : "Test suite "
+  }, {
+    "name" : "testMethod",
+    "value" : "Check that 'Add New Doctor is clickable'"
+  }, {
+    "name" : "package",
+    "value" : "Test suite "
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-108.0.5359.125"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "7177b6c0ff209725",
+      "status" : "passed",
+      "time" : {
+        "start" : 1672602934765,
+        "stop" : 1672602934835,
+        "duration" : 70
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f3cc7189504ce646.json",
+  "parameterValues" : [ "chrome-108.0.5359.125" ]
+}

@@ -1,0 +1,61 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1672773618068' stop='1672773628564'>
+    <name>Watches Page</name>
+    <title>Watches Page</title>
+    <test-cases>
+        <test-case start='1672773618068' status='passed' stop='1672773621831'>
+            <name>should show banner container</name>
+            <title>should show banner container</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1672773621832' status='passed' stop='1672773621854'>
+            <name>rightBannerTitle</name>
+            <title>rightBannerTitle</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1672773621855' status='failed' stop='1672773628563'>
+            <name>Value to the search field</name>
+            <title>Value to the search field</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>expect(received).toContain(expected) // indexOf
+                
+                Expected value:  "Apple"
+                Received object: {"addCommand": [Function anonymous], "element-6066-11e4-a52e-4f735466cecf": "e983b5b6-a4eb-43b8-a6f1-e9a634df7e90", "elementId": "e983b5b6-a4eb-43b8-a6f1-e9a634df7e90", "emit": [Function bound ], "isReactElement": false, "overwriteCommand": [Function anonymous], "parent": {"addCommand": [Function anonymous], "addLocatorStrategy": [Function anonymous], "capabilities": {"acceptInsecureCerts": true, "browserName": "chrome", "browserVersion": "108.0.5359.125", "chrome": {"chromedriverVersion": "108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})", "userDataDir": "C:\\Users\\ANDREI~1\\AppData\\Local\\Temp\\scoped_dir22024_1835130239"}, "goog:chromeOptions": {"debuggerAddress": "localhost:60848"}, "networkConnectionEnabled": false, "pageLoadStrategy": "normal", "platformName": "windows", "proxy": {}, "setWindowRect": true, "strictFileInteractability": false, "timeouts": {"implicit": 0, "pageLoad": 300000, "script": 30000}, "unhandledPromptBehavior": "dismiss and notify", "webauthn:extension:credBlob": true, "webauthn:extension:largeBlob": true, "webauthn:virtualAuthenticators": true}, "overwriteCommand": [Function anonymous], "sessionId": "c4be34fef436d70efde333fc2a0ce596"}, "selector": ".srp-controls__count-heading", "sessionId": "c4be34fef436d70efde333fc2a0ce596"}</message>
+                <stack-trace>Error: expect(received).toContain(expected) // indexOf
+                
+                Expected value:  "Apple"
+                Received object: {"addCommand": [Function anonymous], "element-6066-11e4-a52e-4f735466cecf": "e983b5b6-a4eb-43b8-a6f1-e9a634df7e90", "elementId": "e983b5b6-a4eb-43b8-a6f1-e9a634df7e90", "emit": [Function bound ], "isReactElement": false, "overwriteCommand": [Function anonymous], "parent": {"addCommand": [Function anonymous], "addLocatorStrategy": [Function anonymous], "capabilities": {"acceptInsecureCerts": true, "browserName": "chrome", "browserVersion": "108.0.5359.125", "chrome": {"chromedriverVersion": "108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})", "userDataDir": "C:\\Users\\ANDREI~1\\AppData\\Local\\Temp\\scoped_dir22024_1835130239"}, "goog:chromeOptions": {"debuggerAddress": "localhost:60848"}, "networkConnectionEnabled": false, "pageLoadStrategy": "normal", "platformName": "windows", "proxy": {}, "setWindowRect": true, "strictFileInteractability": false, "timeouts": {"implicit": 0, "pageLoad": 300000, "script": 30000}, "unhandledPromptBehavior": "dismiss and notify", "webauthn:extension:credBlob": true, "webauthn:extension:largeBlob": true, "webauthn:virtualAuthenticators": true}, "overwriteCommand": [Function anonymous], "sessionId": "c4be34fef436d70efde333fc2a0ce596"}, "selector": ".srp-controls__count-heading", "sessionId": "c4be34fef436d70efde333fc2a0ce596"}
+                    at Context.&lt;anonymous> (C:\Users\Andrei_Hudkou2\Desktop\Learn\JS\AutomationBase\UI\test\specs\ebay.spec.js:20:36)
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

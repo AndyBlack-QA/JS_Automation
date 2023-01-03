@@ -1,0 +1,66 @@
+{
+  "uid" : "1d123668b4b20790",
+  "name" : "rightBannerTitle",
+  "fullName" : "Watches Page.rightBannerTitle",
+  "historyId" : "220b5974344098bbefc6165ff96de4e7",
+  "time" : {
+    "start" : 1672603766892,
+    "stop" : 1672603766916,
+    "duration" : 24
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Watches Page"
+  }, {
+    "name" : "testClass",
+    "value" : "Watches Page"
+  }, {
+    "name" : "testMethod",
+    "value" : "rightBannerTitle"
+  }, {
+    "name" : "package",
+    "value" : "Watches Page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-108.0.5359.125"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "20889fd7eb75f377",
+      "status" : "passed",
+      "time" : {
+        "start" : 1672602928438,
+        "stop" : 1672602928465,
+        "duration" : 27
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1d123668b4b20790.json",
+  "parameterValues" : [ "chrome-108.0.5359.125" ]
+}

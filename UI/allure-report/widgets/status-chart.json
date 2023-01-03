@@ -1,0 +1,71 @@
+[ {
+  "uid" : "34a88b5d88555f4a",
+  "name" : "First test",
+  "time" : {
+    "start" : 1672603769142,
+    "stop" : 1672603772621,
+    "duration" : 3479
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1d123668b4b20790",
+  "name" : "rightBannerTitle",
+  "time" : {
+    "start" : 1672603766892,
+    "stop" : 1672603766916,
+    "duration" : 24
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5ac9d4b894905a89",
+  "name" : "Check URL contain calendar",
+  "time" : {
+    "start" : 1672603772996,
+    "stop" : 1672603773381,
+    "duration" : 385
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c2b6f4ed0ebce619",
+  "name" : "second Test",
+  "time" : {
+    "start" : 1672603772621,
+    "stop" : 1672603772939,
+    "duration" : 318
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "49a7b297f0daf9b5",
+  "name" : "should show banner container",
+  "time" : {
+    "start" : 1672603763406,
+    "stop" : 1672603766892,
+    "duration" : 3486
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "53dd09daf546e59",
+  "name" : "urlContain CALENDAR",
+  "time" : {
+    "start" : 1672603773381,
+    "stop" : 1672603773388,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f3cc7189504ce646",
+  "name" : "Check that 'Add New Doctor is clickable'",
+  "time" : {
+    "start" : 1672603772939,
+    "stop" : 1672603772996,
+    "duration" : 57
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

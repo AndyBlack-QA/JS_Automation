@@ -1,0 +1,66 @@
+{
+  "uid" : "49a7b297f0daf9b5",
+  "name" : "should show banner container",
+  "fullName" : "Watches Page.should show banner container",
+  "historyId" : "1598c2c9a3e84247d663088384104aca",
+  "time" : {
+    "start" : 1672603763406,
+    "stop" : 1672603766892,
+    "duration" : 3486
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Watches Page"
+  }, {
+    "name" : "testClass",
+    "value" : "Watches Page"
+  }, {
+    "name" : "testMethod",
+    "value" : "should show banner container"
+  }, {
+    "name" : "package",
+    "value" : "Watches Page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-108.0.5359.125"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "1f1c54624cc82d2f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1672602924258,
+        "stop" : 1672602928438,
+        "duration" : 4180
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "49a7b297f0daf9b5.json",
+  "parameterValues" : [ "chrome-108.0.5359.125" ]
+}
