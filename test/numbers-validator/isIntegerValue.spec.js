@@ -21,7 +21,7 @@ describe('Fourth part', () => {
     const value = 15.5;
     const res = validator.isInteger(value);
     expect(() =>{
-      res.to.be.equal(false);
+      res.to.be.false;
     });
   });
   it('throw error if entered value is not a number', () => {
