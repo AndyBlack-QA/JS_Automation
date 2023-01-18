@@ -15,6 +15,10 @@ describe('isNumberEven positive tests', () => {
     const validationResults = validator.isNumberEven(4);
     expect(validationResults).to.be.true;
   });
+  it('should return false when provided with an non - even number', () => {
+    const validationResults = validator.isNumberEven(3);
+    expect(validationResults).to.be.false;
+  });
   it('should throw an error when provided a string', () => {
     expect(()=>{
       validator.isNumberEven('4');
