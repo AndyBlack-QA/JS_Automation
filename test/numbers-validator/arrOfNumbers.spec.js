@@ -13,7 +13,7 @@ describe('thirdPartTests', () => {
   it('return true if it is array of numbers', () =>{
     const testArr = [5, 12, 15];
     const res = validator.isAllNumbers(testArr);
-    expect(res).to.be.equal(true);
+    expect(res).to.be.true;
   });
   it('return error if arr not with numbers', () =>{
     const arr = '15';

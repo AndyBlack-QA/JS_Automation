@@ -13,7 +13,7 @@ describe('isNumberEven positive tests', () => {
 
   it('should return true when provided with an even number', () => {
     const validationResults = validator.isNumberEven(4);
-    expect(validationResults).to.be.equal(true);
+    expect(validationResults).to.be.true;
   });
   it('should throw an error when provided a string', () => {
     expect(()=>{

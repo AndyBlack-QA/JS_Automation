@@ -14,7 +14,7 @@ describe('Fourth part', () => {
     const value = 15;
     const res = validator.isInteger(value);
     expect(() =>{
-      res.to.be.equal(true);
+      res.to.be.true;
     });
   });
   it('return false if entered value is float', () => {
