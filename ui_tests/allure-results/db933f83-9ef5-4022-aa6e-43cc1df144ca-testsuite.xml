@@ -1,0 +1,140 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1672912255995' stop='1672912344287'>
+    <name>Test suite </name>
+    <title>Test suite </title>
+    <test-cases>
+        <test-case start='1672912255996' status='passed' stop='1672912263811'>
+            <name>First test</name>
+            <title>First test</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1672912263811' status='passed' stop='1672912264134'>
+            <name>second Test</name>
+            <title>second Test</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1672912264134' status='passed' stop='1672912264199'>
+            <name>Check that 'Add New Doctor is clickable'</name>
+            <title>Check that 'Add New Doctor is clickable'</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1672912264199' status='passed' stop='1672912264594'>
+            <name>Check URL contain calendar</name>
+            <title>Check URL contain calendar</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1672912264595' status='passed' stop='1672912264599'>
+            <name>urlContain CALENDAR</name>
+            <title>urlContain CALENDAR</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1672912264600' status='passed' stop='1672912268617'>
+            <name>Change Border of doctor choose dropdown</name>
+            <title>Change Border of doctor choose dropdown</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1672912268618' status='passed' stop='1672912274866'>
+            <name>waitUntil</name>
+            <title>waitUntil</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1672912274867' status='broken' stop='1672912328780'>
+            <name>Choose Period of time in Calendar</name>
+            <title>Choose Period of time in Calendar</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element click intercepted: Element &lt;td aria-selected="false" colspan="1" class="e-work-cells" data-date="1672554600000" data-group-index="0">&lt;/td> is not clickable at point (471, 581). Other element would receive the click: &lt;div class="e-appointment e-read-only" data-id="Appointment_454" data-guid="ea92bdb6-cc38-858a-f931-fb97371897c9" role="button" tabindex="0" aria-disabled="true" aria-pressed="false" aria-label="My Calendar&amp;quot;s event -  Brazil - Mexico Begin From Sunday, January 1, 2023 at 8:11:00 AM GMT+03:00 Ends At Sunday, January 1, 2023 at 10:11:00 AM GMT+03:00" data-group-index="0" style="background-color: rgb(196, 48, 129); width: 93%; height: 144px; top: 589.2px; left: 0%;">...&lt;/div>
+                  (Session info: chrome=108.0.5359.125)</message>
+                <stack-trace>element click intercepted: element click intercepted: Element &lt;td aria-selected="false" colspan="1" class="e-work-cells" data-date="1672554600000" data-group-index="0">&lt;/td> is not clickable at point (471, 581). Other element would receive the click: &lt;div class="e-appointment e-read-only" data-id="Appointment_454" data-guid="ea92bdb6-cc38-858a-f931-fb97371897c9" role="button" tabindex="0" aria-disabled="true" aria-pressed="false" aria-label="My Calendar&amp;quot;s event -  Brazil - Mexico Begin From Sunday, January 1, 2023 at 8:11:00 AM GMT+03:00 Ends At Sunday, January 1, 2023 at 10:11:00 AM GMT+03:00" data-group-index="0" style="background-color: rgb(196, 48, 129); width: 93%; height: 144px; top: 589.2px; left: 0%;">...&lt;/div>
+                  (Session info: chrome=108.0.5359.125)
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1672912328780' status='passed' stop='1672912344286'>
+            <name>Cookie Actions</name>
+            <title>Cookie Actions</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Watches Page" timestamp="2023-01-22T20:45:56" time="16.887" tests="6" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Watches Page"/>
+      <property name="capabilities" value="firefox.109_0.windows"/>
+      <property name="file" value="file:///C:/Users/Andrei_Hudkou2/Desktop/Learn/JS/AutomationBase/UI/test/specs/ebay.spec.js"/>
+    </properties>
+    <testcase classname="firefox.109_0.windows.Watches_Page" name="should show banner container" time="8.975">
+      <system-out><![CDATA[
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/url - {"url":"https://by.ebay.com/b/Xiaomi/bn_21838783"}
+RESULT: {"url":"https://by.ebay.com/b/Xiaomi/bn_21838783"}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element - {"using":"css selector","value":"div[class='title-banner__right-image']"}
+RESULT: {"using":"css selector","value":"div[class='title-banner__right-image']"}
+COMMAND: GET /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element/46b4b52f-48e9-4ae1-8b2c-ef273cf0d03a/displayed - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.109_0.windows.Watches_Page" name="rightBannerTitle" time="0.022">
+      <system-out><![CDATA[
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element - {"using":"css selector","value":".title-banner__title"}
+RESULT: {"using":"css selector","value":".title-banner__title"}
+COMMAND: GET /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element/07f36d79-14c1-45c7-9f4a-e810827cf93a/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.109_0.windows.Watches_Page" name="Value to the search field" time="4.336">
+      <system-out><![CDATA[
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element - {"using":"css selector","value":".gh-tb"}
+RESULT: {"using":"css selector","value":".gh-tb"}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element - {"using":"css selector","value":".btn-prim"}
+RESULT: {"using":"css selector","value":".btn-prim"}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element/84a3160b-e7a9-4494-900d-1f8bd4653975/clear - {}
+RESULT: {}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element/84a3160b-e7a9-4494-900d-1f8bd4653975/value - {"text":"Apple"}
+RESULT: {"text":"Apple"}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/actions - {"actions":[{"id":"action1","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
+COMMAND: GET /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element/12e096d7-3f9a-419a-8ce8-e3deb05d6ada/displayed - {}
+RESULT: {"actions":[{"id":"action1","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
+COMMAND: DELETE /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/actions - {}
+RESULT: {}
+RESULT: {}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element - {"using":"css selector","value":".srp-controls__count-heading"}
+RESULT: {"using":"css selector","value":".srp-controls__count-heading"}
+COMMAND: GET /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element/95d1790a-c7fa-4979-98e1-5de6ce8d58de/text - {}
+RESULT: {}
+COMMAND: GET /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element/95d1790a-c7fa-4979-98e1-5de6ce8d58de/text - {}
+RESULT: {}
+COMMAND: GET /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element/95d1790a-c7fa-4979-98e1-5de6ce8d58de/text - {}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element - {"using":"css selector","value":".srp-controls__count-heading"}
+RESULT: {"using":"css selector","value":".srp-controls__count-heading"}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/elements - {"using":"css selector","value":".srp-controls__count-heading"}
+RESULT: {"using":"css selector","value":".srp-controls__count-heading"}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/elements - {"using":"css selector","value":".srp-controls__count-heading"}
+RESULT: {"using":"css selector","value":".srp-controls__count-heading"}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/elements - {"using":"css selector","value":".srp-controls__count-heading"}
+RESULT: {"using":"css selector","value":".srp-controls__count-heading"}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/elements - {"using":"css selector","value":".srp-controls__count-heading"}
+RESULT: {"using":"css selector","value":".srp-controls__count-heading"}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/elements - {"using":"css selector","value":".srp-controls__count-heading"}
+RESULT: {"using":"css selector","value":".srp-controls__count-heading"}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/elements - {"using":"css selector","value":".srp-controls__count-heading"}
+RESULT: {"using":"css selector","value":".srp-controls__count-heading"}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/elements - {"using":"css selector","value":".srp-controls__count-heading"}
+RESULT: {"using":"css selector","value":".srp-controls__count-heading"}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element - {"using":"css selector","value":".srp-controls__count-heading"}
+RESULT: {"using":"css selector","value":".srp-controls__count-heading"}
+COMMAND: GET /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element/95d1790a-c7fa-4979-98e1-5de6ce8d58de/text - {}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element - {"using":"css selector","value":".srp-controls__count-heading"}
+RESULT: {"using":"css selector","value":".srp-controls__count-heading"}
+COMMAND: GET /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element/81a2acf7-1090-4a1e-9bbe-f5c5b67dadec/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.109_0.windows.Watches_Page" name="Update search field value" time="1.752">
+      <system-out><![CDATA[
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element - {"using":"css selector","value":".gh-tb"}
+RESULT: {"using":"css selector","value":".gh-tb"}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element - {"using":"css selector","value":".btn-prim"}
+RESULT: {"using":"css selector","value":".btn-prim"}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element/cd7c4034-5e3c-4131-bd46-a2402b6e4b97/value - {"text":" ipad"}
+RESULT: {"text":" ipad"}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/actions - {"actions":[{"id":"action2","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
+COMMAND: GET /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element/923f23f2-f78e-4134-a82f-3b02096e1505/displayed - {}
+RESULT: {"actions":[{"id":"action2","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
+COMMAND: DELETE /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/actions - {}
+RESULT: {}
+RESULT: {}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element - {"using":"css selector","value":".srp-controls__count-heading"}
+RESULT: {"using":"css selector","value":".srp-controls__count-heading"}
+COMMAND: GET /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element/81a2acf7-1090-4a1e-9bbe-f5c5b67dadec/text - {}
+RESULT: {}
+COMMAND: GET /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element/81a2acf7-1090-4a1e-9bbe-f5c5b67dadec/text - {}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element - {"using":"css selector","value":".srp-controls__count-heading"}
+RESULT: {"using":"css selector","value":".srp-controls__count-heading"}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/elements - {"using":"css selector","value":".srp-controls__count-heading"}
+RESULT: {"using":"css selector","value":".srp-controls__count-heading"}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/elements - {"using":"css selector","value":".srp-controls__count-heading"}
+RESULT: {"using":"css selector","value":".srp-controls__count-heading"}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/elements - {"using":"css selector","value":".srp-controls__count-heading"}
+RESULT: {"using":"css selector","value":".srp-controls__count-heading"}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element - {"using":"css selector","value":".srp-controls__count-heading"}
+RESULT: {"using":"css selector","value":".srp-controls__count-heading"}
+COMMAND: GET /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element/81a2acf7-1090-4a1e-9bbe-f5c5b67dadec/text - {}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element - {"using":"css selector","value":".srp-controls__count-heading"}
+RESULT: {"using":"css selector","value":".srp-controls__count-heading"}
+COMMAND: GET /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element/41f1472f-f58c-49ad-9778-ee7c666560f8/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.109_0.windows.Watches_Page" name="Existing categories on the Page" time="0.578">
+      <system-out><![CDATA[
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element - {"using":"css selector","value":".gh-o"}
+RESULT: {"using":"css selector","value":".gh-o"}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element - {"using":"css selector","value":"#gh-shop-a"}
+RESULT: {"using":"css selector","value":"#gh-shop-a"}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element - {"using":"css selector","value":".gh-o"}
+RESULT: {"using":"css selector","value":".gh-o"}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/elements - {"using":"css selector","value":".gh-o"}
+RESULT: {"using":"css selector","value":".gh-o"}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/actions - {"actions":[{"id":"action3","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
+COMMAND: GET /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element/c486644d-2951-4337-8af1-c58758b4c830/displayed - {}
+RESULT: {"actions":[{"id":"action3","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
+COMMAND: DELETE /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/actions - {}
+RESULT: {}
+RESULT: {}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element - {"using":"css selector","value":".gh-o"}
+RESULT: {"using":"css selector","value":".gh-o"}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/elements - {"using":"css selector","value":".gh-o"}
+RESULT: {"using":"css selector","value":".gh-o"}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/actions - {"actions":[{"id":"action4","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
+COMMAND: GET /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element/c486644d-2951-4337-8af1-c58758b4c830/displayed - {}
+RESULT: {"actions":[{"id":"action4","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
+COMMAND: DELETE /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/actions - {}
+RESULT: {}
+RESULT: {}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element - {"using":"css selector","value":".gh-o"}
+RESULT: {"using":"css selector","value":".gh-o"}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/elements - {"using":"css selector","value":".gh-o"}
+RESULT: {"using":"css selector","value":".gh-o"}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.109_0.windows.Watches_Page" name="Wait for Discount header display" time="1.222">
+      <system-out><![CDATA[
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element - {"using":"css selector","value":"a[data-sp='m570.l3188']"}
+RESULT: {"using":"css selector","value":"a[data-sp='m570.l3188']"}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/actions - {"actions":[{"id":"action5","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
+COMMAND: GET /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element/ffbf29d0-0890-4e4c-b81c-cdc7e7bbac2b/displayed - {}
+RESULT: {"actions":[{"id":"action5","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
+COMMAND: DELETE /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/actions - {}
+RESULT: {}
+RESULT: {}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element - {"using":"css selector","value":"ebayui-dne-banner-text"}
+RESULT: {"using":"css selector","value":"ebayui-dne-banner-text"}
+COMMAND: POST /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/element - {"using":"css selector","value":"ebayui-dne-banner-text"}
+RESULT: {"using":"css selector","value":"ebayui-dne-banner-text"}
+COMMAND: GET /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/url - {}
+RESULT: {}
+COMMAND: GET /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/url - {}
+RESULT: {}
+COMMAND: GET /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747/url - {}
+RESULT: {}
+COMMAND: DELETE /session/afa1f2fe-2f58-4b8c-b4b0-d9f728838747 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

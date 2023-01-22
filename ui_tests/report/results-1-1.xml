@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Test suite" timestamp="2023-01-22T20:46:19" time="84.628" tests="9" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Test suite "/>
+      <property name="capabilities" value="firefox.109_0.windows"/>
+      <property name="file" value="file:///C:/Users/Andrei_Hudkou2/Desktop/Learn/JS/AutomationBase/UI/test/specs/test.spec.js"/>
+    </properties>
+    <testcase classname="firefox.109_0.windows.Test_suite_" name="First test" time="5.547">
+      <system-out><![CDATA[
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+COMMAND: GET /session/76d5e679-c743-40bf-b941-c164c1ed3638/title - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.109_0.windows.Test_suite_" name="second Test" time="0.868">
+      <system-out><![CDATA[
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/element - {"using":"css selector","value":"div.doctors"}
+RESULT: {"using":"css selector","value":"div.doctors"}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/element/b314001c-3d0f-4d10-a765-4b3d92a12fba/click - {}
+RESULT: {}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/element - {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+RESULT: {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/element/4aa7b463-db84-4244-a358-2d6da9041077/click - {}
+RESULT: {}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/element - {"using":"css selector","value":"input[name='Name']"}
+RESULT: {"using":"css selector","value":"input[name='Name']"}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/element/7ab4180e-fc65-40bd-a312-10b6235b126f/clear - {}
+RESULT: {}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/element/7ab4180e-fc65-40bd-a312-10b6235b126f/value - {"text":"John Doe"}
+RESULT: {"text":"John Doe"}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/element - {"using":"xpath","value":"//button[text()='Save']"}
+RESULT: {"using":"xpath","value":"//button[text()='Save']"}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/element/c14f0da5-63a6-43b6-9dda-d767328300e5/click - {}
+RESULT: {}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/element - {"using":"css selector","value":"label#Email-info"}
+RESULT: {"using":"css selector","value":"label#Email-info"}
+COMMAND: GET /session/76d5e679-c743-40bf-b941-c164c1ed3638/element/619ce434-4651-46d9-abde-344717e382fe/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.109_0.windows.Test_suite_" name="Check that Add New Doctor is clickable" time="0.262">
+      <system-out><![CDATA[
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/element - {"using":"xpath","value":"//button[text()='Cancel']"}
+RESULT: {"using":"xpath","value":"//button[text()='Cancel']"}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/element/82049d0f-b6b9-4cff-b13a-fc6f2e0c1fe3/click - {}
+RESULT: {}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/element - {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+RESULT: {"using":"xpath","value":"//button[text()='Add New Doctor']"}
+COMMAND: GET /session/76d5e679-c743-40bf-b941-c164c1ed3638/element/4aa7b463-db84-4244-a358-2d6da9041077/displayed - {}
+RESULT: {}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"4aa7b463-db84-4244-a358-2d6da9041077","ELEMENT":"4aa7b463-db84-4244-a358-2d6da9041077"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"4aa7b463-db84-4244-a358-2d6da9041077","ELEMENT":"4aa7b463-db84-4244-a358-2d6da9041077"}]}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.109_0.windows.Test_suite_" name="Check URL contain calendar" time="0.366">
+      <system-out><![CDATA[
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/element - {"using":"css selector","value":"span[title='calendar']"}
+RESULT: {"using":"css selector","value":"span[title='calendar']"}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/element/4d3f74fb-3ad1-4079-b90a-cc95cd3f8bfb/click - {}
+RESULT: {}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/element - {"using":"css selector","value":"span[class='e-tbar-btn-text']"}
+RESULT: {"using":"css selector","value":"span[class='e-tbar-btn-text']"}
+COMMAND: GET /session/76d5e679-c743-40bf-b941-c164c1ed3638/element/68017434-944b-487d-8db1-ac4891530570/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.109_0.windows.Test_suite_" name="urlContain CALENDAR" time="0.006">
+      <system-out><![CDATA[
+COMMAND: GET /session/76d5e679-c743-40bf-b941-c164c1ed3638/url - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.109_0.windows.Test_suite_" name="Change Border of doctor choose dropdown" time="4.024">
+      <system-out><![CDATA[
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/element - {"using":"css selector","value":"span[class='e-input-group e-control-wrapper e-specialist-doctors e-ddl e-lib e-keyboard']"}
+RESULT: {"using":"css selector","value":"span[class='e-input-group e-control-wrapper e-specialist-doctors e-ddl e-lib e-keyboard']"}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/execute/sync - {"script":"return (function(docChoose){\r\n            docChoose.style.border='red solid 2px';\r\n            \r\n        }).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"cefd6427-957b-4f49-bd49-f4722624f319","ELEMENT":"cefd6427-957b-4f49-bd49-f4722624f319"}]}
+RESULT: {"script":"return (function(docChoose){\r\n            docChoose.style.border='red solid 2px';\r\n            \r\n        }).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"cefd6427-957b-4f49-bd49-f4722624f319","ELEMENT":"cefd6427-957b-4f49-bd49-f4722624f319"}]}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.109_0.windows.Test_suite_" name="waitUntil" time="8.253">
+      <system-out><![CDATA[
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/url - {"url":"https://ej2.syncfusion.com/react/demos/progress-bar/semi-circular/"}
+RESULT: {"url":"https://ej2.syncfusion.com/react/demos/progress-bar/semi-circular/"}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/element - {"using":"css selector","value":"#reLoad"}
+RESULT: {"using":"css selector","value":"#reLoad"}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/element/22f5c4a6-347a-4a05-b3ea-b35d0f7ef6d0/click - {}
+RESULT: {}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/element - {"using":"css selector","value":"#point1"}
+RESULT: {"using":"css selector","value":"#point1"}
+COMMAND: GET /session/76d5e679-c743-40bf-b941-c164c1ed3638/element/2621f85a-ec99-453c-ac90-15e10b33898c/text - {}
+RESULT: {}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/element - {"using":"css selector","value":"#point1"}
+RESULT: {"using":"css selector","value":"#point1"}
+COMMAND: GET /session/76d5e679-c743-40bf-b941-c164c1ed3638/element/2621f85a-ec99-453c-ac90-15e10b33898c/text - {}
+RESULT: {}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/element - {"using":"css selector","value":"#point1"}
+RESULT: {"using":"css selector","value":"#point1"}
+COMMAND: GET /session/76d5e679-c743-40bf-b941-c164c1ed3638/element/2621f85a-ec99-453c-ac90-15e10b33898c/text - {}
+RESULT: {}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/element - {"using":"css selector","value":"#point1"}
+RESULT: {"using":"css selector","value":"#point1"}
+COMMAND: GET /session/76d5e679-c743-40bf-b941-c164c1ed3638/element/2621f85a-ec99-453c-ac90-15e10b33898c/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.109_0.windows.Test_suite_" name="Choose Period of time in Calendar" time="59.856">
+      <system-out><![CDATA[
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/url - {"url":"https://ej2.syncfusion.com/demos/#/bootstrap5/schedule/overview.html"}
+RESULT: {"url":"https://ej2.syncfusion.com/demos/#/bootstrap5/schedule/overview.html"}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/element - {"using":"css selector","value":"tr [data-date = '1674369000000']"}
+RESULT: {"using":"css selector","value":"tr [data-date = '1674369000000']"}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/element - {"using":"css selector","value":"tr [data-date = '1674379800000']"}
+RESULT: {"using":"css selector","value":"tr [data-date = '1674379800000']"}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/elements - {"using":"css selector","value":"tr [data-date = '1674369000000']"}
+RESULT: {"using":"css selector","value":"tr [data-date = '1674369000000']"}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/elements - {"using":"css selector","value":"tr [data-date = '1674369000000']"}
+RESULT: {"using":"css selector","value":"tr [data-date = '1674369000000']"}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/elements - {"using":"css selector","value":"tr [data-date = '1674369000000']"}
+RESULT: {"using":"css selector","value":"tr [data-date = '1674369000000']"}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/elements - {"using":"css selector","value":"tr [data-date = '1674369000000']"}
+RESULT: {"using":"css selector","value":"tr [data-date = '1674369000000']"}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/element - {"using":"css selector","value":"tr [data-date = '1674369000000']"}
+RESULT: {"using":"css selector","value":"tr [data-date = '1674369000000']"}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/element/9f25e3bc-e694-4171-bacc-8a602bc02e7d/click - {}
+RESULT: {}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/actions - {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""}]}]}
+RESULT: {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""}]}]}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/elements - {"using":"css selector","value":"tr [data-date = '1674379800000']"}
+RESULT: {"using":"css selector","value":"tr [data-date = '1674379800000']"}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/element - {"using":"css selector","value":"tr [data-date = '1674379800000']"}
+RESULT: {"using":"css selector","value":"tr [data-date = '1674379800000']"}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/element/6f4e8e59-3eb1-4182-8772-7c50b98d03b8/click - {}
+RESULT: {}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/actions - {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyUp","value":""}]}]}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.109_0.windows.Test_suite_" name="Cookie Actions" time="5.442">
+      <system-out><![CDATA[
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+COMMAND: POST /session/76d5e679-c743-40bf-b941-c164c1ed3638/cookie - {"cookie":{"name":"andyCookie","value":"coookieActions"}}
+RESULT: {"cookie":{"name":"andyCookie","value":"coookieActions"}}
+COMMAND: GET /session/76d5e679-c743-40bf-b941-c164c1ed3638/cookie - {}
+RESULT: {}
+COMMAND: DELETE /session/76d5e679-c743-40bf-b941-c164c1ed3638/cookie/andyCookie - {}
+RESULT: {}
+COMMAND: DELETE /session/76d5e679-c743-40bf-b941-c164c1ed3638 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

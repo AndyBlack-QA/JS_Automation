@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Doctors page" timestamp="2023-01-22T22:27:43" time="22.013" tests="1" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Doctors page"/>
+      <property name="capabilities" value="firefox.109_0.windows"/>
+      <property name="file" value="file:///C:/Users/Andrei_Hudkou2/Desktop/Learn/JS/AutomationBase/Course/ui_tests/src/tests/simple.tests.js"/>
+    </properties>
+    <testcase classname="firefox.109_0.windows.Doctors_page" name="Check the corectness of the page title" time="22.011">
+      <failure/>
+      <error message="Expect window to have title&#xA;&#xA;Expected: &quot;Appointment Planner - Syncfusion Angular Components Showcase Ap&quot;&#xA;Received: &quot;Appointment Planner - Syncfusion Angular Components Showcase App&quot;"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/1a6b8d81-8359-4510-94d8-b4a917fb8706/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/doctors"}
+RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/doctors"}
+COMMAND: GET /session/1a6b8d81-8359-4510-94d8-b4a917fb8706/title - {}
+RESULT: {}
+COMMAND: GET /session/1a6b8d81-8359-4510-94d8-b4a917fb8706/title - {}
+RESULT: {}
+COMMAND: GET /session/1a6b8d81-8359-4510-94d8-b4a917fb8706/title - {}
+RESULT: {}
+COMMAND: GET /session/1a6b8d81-8359-4510-94d8-b4a917fb8706/title - {}
+RESULT: {}
+COMMAND: GET /session/1a6b8d81-8359-4510-94d8-b4a917fb8706/title - {}
+RESULT: {}
+COMMAND: GET /session/1a6b8d81-8359-4510-94d8-b4a917fb8706/title - {}
+RESULT: {}
+COMMAND: GET /session/1a6b8d81-8359-4510-94d8-b4a917fb8706/title - {}
+RESULT: {}
+COMMAND: GET /session/1a6b8d81-8359-4510-94d8-b4a917fb8706/title - {}
+RESULT: {}
+COMMAND: GET /session/1a6b8d81-8359-4510-94d8-b4a917fb8706/title - {}
+RESULT: {}
+COMMAND: GET /session/1a6b8d81-8359-4510-94d8-b4a917fb8706/title - {}
+RESULT: {}
+COMMAND: GET /session/1a6b8d81-8359-4510-94d8-b4a917fb8706/title - {}
+RESULT: {}
+COMMAND: GET /session/1a6b8d81-8359-4510-94d8-b4a917fb8706/title - {}
+RESULT: {}
+COMMAND: GET /session/1a6b8d81-8359-4510-94d8-b4a917fb8706/title - {}
+RESULT: {}
+COMMAND: GET /session/1a6b8d81-8359-4510-94d8-b4a917fb8706/title - {}
+RESULT: {}
+COMMAND: GET /session/1a6b8d81-8359-4510-94d8-b4a917fb8706/title - {}
+RESULT: {}
+COMMAND: GET /session/1a6b8d81-8359-4510-94d8-b4a917fb8706/title - {}
+RESULT: {}
+COMMAND: GET /session/1a6b8d81-8359-4510-94d8-b4a917fb8706/title - {}
+RESULT: {}
+COMMAND: GET /session/1a6b8d81-8359-4510-94d8-b4a917fb8706/title - {}
+RESULT: {}
+COMMAND: GET /session/1a6b8d81-8359-4510-94d8-b4a917fb8706/title - {}
+RESULT: {}
+COMMAND: GET /session/1a6b8d81-8359-4510-94d8-b4a917fb8706/title - {}
+RESULT: {}
+COMMAND: GET /session/1a6b8d81-8359-4510-94d8-b4a917fb8706/screenshot - {}
+RESULT: {}
+COMMAND: DELETE /session/1a6b8d81-8359-4510-94d8-b4a917fb8706 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Expect window to have title
+
+Expected: "Appointment Planner - Syncfusion Angular Components Showcase Ap"
+Received: "Appointment Planner - Syncfusion Angular Components Showcase App"
+    at Context.<anonymous> (C:\Users\Andrei_Hudkou2\Desktop\Learn\JS\AutomationBase\Course\ui_tests\src\tests\simple.tests.js:7:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

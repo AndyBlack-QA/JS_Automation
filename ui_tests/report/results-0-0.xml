@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Watches Page" timestamp="2023-01-22T20:45:55" time="14.103" tests="6" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Watches Page"/>
+      <property name="capabilities" value="chrome.109_0_5414_75.windows"/>
+      <property name="file" value="file:///C:/Users/Andrei_Hudkou2/Desktop/Learn/JS/AutomationBase/UI/test/specs/ebay.spec.js"/>
+    </properties>
+    <testcase classname="chrome.109_0_5414_75.windows.Watches_Page" name="should show banner container" time="4.161">
+      <system-out><![CDATA[
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/url - {"url":"https://by.ebay.com/b/Xiaomi/bn_21838783"}
+RESULT: {"url":"https://by.ebay.com/b/Xiaomi/bn_21838783"}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/element - {"using":"css selector","value":"div[class='title-banner__right-image']"}
+RESULT: {"using":"css selector","value":"div[class='title-banner__right-image']"}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"a061200b-0ac8-4627-aee1-c5596dc4a1af","ELEMENT":"a061200b-0ac8-4627-aee1-c5596dc4a1af"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"a061200b-0ac8-4627-aee1-c5596dc4a1af","ELEMENT":"a061200b-0ac8-4627-aee1-c5596dc4a1af"}]}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.109_0_5414_75.windows.Watches_Page" name="rightBannerTitle" time="0.036">
+      <system-out><![CDATA[
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/element - {"using":"css selector","value":".title-banner__title"}
+RESULT: {"using":"css selector","value":".title-banner__title"}
+COMMAND: GET /session/6b71e5f21c0fe66876ce5a40082ffb7c/element/710870ce-a080-4a7c-bf49-455f7cb4df98/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.109_0_5414_75.windows.Watches_Page" name="Value to the search field" time="5.682">
+      <system-out><![CDATA[
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/element - {"using":"css selector","value":".gh-tb"}
+RESULT: {"using":"css selector","value":".gh-tb"}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/element - {"using":"css selector","value":".btn-prim"}
+RESULT: {"using":"css selector","value":".btn-prim"}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/element/acd642b7-cbea-4555-9ce3-aaeb8d7e660b/clear - {}
+RESULT: {}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/element/acd642b7-cbea-4555-9ce3-aaeb8d7e660b/value - {"text":"Apple"}
+RESULT: {"text":"Apple"}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/actions - {"actions":[{"id":"action1","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"39871d1f-3f7e-471a-a21d-c37e82299f8c","ELEMENT":"39871d1f-3f7e-471a-a21d-c37e82299f8c"}]}
+RESULT: {"actions":[{"id":"action1","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
+COMMAND: DELETE /session/6b71e5f21c0fe66876ce5a40082ffb7c/actions - {}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/element - {"using":"css selector","value":".btn-prim"}
+RESULT: {}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/element - {"using":"css selector","value":".srp-controls__count-heading"}
+RESULT: {"using":"css selector","value":".btn-prim"}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"d96eccd9-66d4-4d6d-81a9-f2996197175c","ELEMENT":"d96eccd9-66d4-4d6d-81a9-f2996197175c"}]}
+RESULT: {"using":"css selector","value":".srp-controls__count-heading"}
+COMMAND: GET /session/6b71e5f21c0fe66876ce5a40082ffb7c/element/b18baeba-8c28-420a-b7da-8f42a30769c5/text - {}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"d96eccd9-66d4-4d6d-81a9-f2996197175c","ELEMENT":"d96eccd9-66d4-4d6d-81a9-f2996197175c"}]}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.109_0_5414_75.windows.Watches_Page" name="Update search field value" time="2.205">
+      <system-out><![CDATA[
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/element - {"using":"css selector","value":".gh-tb"}
+RESULT: {"using":"css selector","value":".gh-tb"}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/element - {"using":"css selector","value":".btn-prim"}
+RESULT: {"using":"css selector","value":".btn-prim"}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/element/b498acad-8cb1-4bc6-b8b6-6ed0940313db/value - {"text":" ipad"}
+RESULT: {"text":" ipad"}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/actions - {"actions":[{"id":"action2","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"d96eccd9-66d4-4d6d-81a9-f2996197175c","ELEMENT":"d96eccd9-66d4-4d6d-81a9-f2996197175c"}]}
+RESULT: {"actions":[{"id":"action2","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
+COMMAND: DELETE /session/6b71e5f21c0fe66876ce5a40082ffb7c/actions - {}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/element - {"using":"css selector","value":".btn-prim"}
+RESULT: {}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/element - {"using":"css selector","value":".srp-controls__count-heading"}
+RESULT: {"using":"css selector","value":".btn-prim"}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"ef3f3e13-4a0a-49e8-9527-65e910c6075d","ELEMENT":"ef3f3e13-4a0a-49e8-9527-65e910c6075d"}]}
+RESULT: {"using":"css selector","value":".srp-controls__count-heading"}
+COMMAND: GET /session/6b71e5f21c0fe66876ce5a40082ffb7c/element/1999cff8-4d0e-4517-9b7d-6ef31e4418b2/text - {}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"ef3f3e13-4a0a-49e8-9527-65e910c6075d","ELEMENT":"ef3f3e13-4a0a-49e8-9527-65e910c6075d"}]}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.109_0_5414_75.windows.Watches_Page" name="Existing categories on the Page" time="0.408">
+      <system-out><![CDATA[
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/element - {"using":"css selector","value":".gh-o"}
+RESULT: {"using":"css selector","value":".gh-o"}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/element - {"using":"css selector","value":"#gh-shop-a"}
+RESULT: {"using":"css selector","value":"#gh-shop-a"}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"15086c86-0845-4202-85a6-f6ad3277110a","ELEMENT":"15086c86-0845-4202-85a6-f6ad3277110a"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"15086c86-0845-4202-85a6-f6ad3277110a","ELEMENT":"15086c86-0845-4202-85a6-f6ad3277110a"}]}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/elements - {"using":"css selector","value":".gh-o"}
+RESULT: {"using":"css selector","value":".gh-o"}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/actions - {"actions":[{"id":"action3","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"27a0d586-f188-4356-8723-fa14485e2490","ELEMENT":"27a0d586-f188-4356-8723-fa14485e2490"}]}
+RESULT: {"actions":[{"id":"action3","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
+COMMAND: DELETE /session/6b71e5f21c0fe66876ce5a40082ffb7c/actions - {}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"27a0d586-f188-4356-8723-fa14485e2490","ELEMENT":"27a0d586-f188-4356-8723-fa14485e2490"}]}
+RESULT: {}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"15086c86-0845-4202-85a6-f6ad3277110a","ELEMENT":"15086c86-0845-4202-85a6-f6ad3277110a"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"15086c86-0845-4202-85a6-f6ad3277110a","ELEMENT":"15086c86-0845-4202-85a6-f6ad3277110a"}]}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/elements - {"using":"css selector","value":".gh-o"}
+RESULT: {"using":"css selector","value":".gh-o"}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/actions - {"actions":[{"id":"action4","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"27a0d586-f188-4356-8723-fa14485e2490","ELEMENT":"27a0d586-f188-4356-8723-fa14485e2490"}]}
+RESULT: {"actions":[{"id":"action4","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
+COMMAND: DELETE /session/6b71e5f21c0fe66876ce5a40082ffb7c/actions - {}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"27a0d586-f188-4356-8723-fa14485e2490","ELEMENT":"27a0d586-f188-4356-8723-fa14485e2490"}]}
+RESULT: {}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"15086c86-0845-4202-85a6-f6ad3277110a","ELEMENT":"15086c86-0845-4202-85a6-f6ad3277110a"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"15086c86-0845-4202-85a6-f6ad3277110a","ELEMENT":"15086c86-0845-4202-85a6-f6ad3277110a"}]}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/elements - {"using":"css selector","value":".gh-o"}
+RESULT: {"using":"css selector","value":".gh-o"}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.109_0_5414_75.windows.Watches_Page" name="Wait for Discount header display" time="1.609">
+      <system-out><![CDATA[
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/element - {"using":"css selector","value":"a[data-sp='m570.l3188']"}
+RESULT: {"using":"css selector","value":"a[data-sp='m570.l3188']"}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/actions - {"actions":[{"id":"action5","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"0f01c88d-c93e-4b70-9486-9cb0392122a8","ELEMENT":"0f01c88d-c93e-4b70-9486-9cb0392122a8"}]}
+RESULT: {"actions":[{"id":"action5","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
+COMMAND: DELETE /session/6b71e5f21c0fe66876ce5a40082ffb7c/actions - {}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/element - {"using":"css selector","value":"a[data-sp='m570.l3188']"}
+RESULT: {}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/element - {"using":"css selector","value":"ebayui-dne-banner-text"}
+RESULT: {"using":"css selector","value":"a[data-sp='m570.l3188']"}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"8f9793ae-8753-4631-8ae1-e591a32b49df","ELEMENT":"8f9793ae-8753-4631-8ae1-e591a32b49df"}]}
+RESULT: {"using":"css selector","value":"ebayui-dne-banner-text"}
+COMMAND: POST /session/6b71e5f21c0fe66876ce5a40082ffb7c/element - {"using":"css selector","value":"ebayui-dne-banner-text"}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"8f9793ae-8753-4631-8ae1-e591a32b49df","ELEMENT":"8f9793ae-8753-4631-8ae1-e591a32b49df"}]}
+RESULT: {"using":"css selector","value":"ebayui-dne-banner-text"}
+COMMAND: GET /session/6b71e5f21c0fe66876ce5a40082ffb7c/url - {}
+RESULT: {}
+COMMAND: DELETE /session/6b71e5f21c0fe66876ce5a40082ffb7c - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
