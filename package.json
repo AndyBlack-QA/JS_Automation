@@ -1,12 +1,10 @@
 {
   "name": "ui",
-  "description":"pom with wdio",
-  "private":true,
-
+  "description": "",
+  "private": true,
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    
     "test": "wdio run ./wdio.conf.js"
   },
   "keywords": [],
@@ -366,6 +364,5 @@
     "yauzl": "^2.10.0",
     "yocto-queue": "^1.0.0",
     "zip-stream": "^4.1.0"
-  },
-  "description": ""
+  }
 }
