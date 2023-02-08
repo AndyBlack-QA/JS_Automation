@@ -1,0 +1,30 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1675616477456' stop='1675616477461'>
+    <name>Doctors page</name>
+    <title>Doctors page</title>
+    <test-cases>
+        <test-case start='1675616477457' status='broken' stop='1675616477460'>
+            <name>"before each" hook for Doctors page</name>
+            <title>"before each" hook for Doctors page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-109.0.1'/>
+                <parameter kind='argument' name='browser' value='firefox-109.0.1'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Cannot read properties of undefined (reading 'open')</message>
+                <stack-trace>TypeError: Cannot read properties of undefined (reading 'open')
+                    at Context.&lt;anonymous> (C:\Users\Andrei_Hudkou2\Desktop\Learn\JS\AutomationBase\Course\ui_tests\src\tests\simple.tests.js:6:35)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

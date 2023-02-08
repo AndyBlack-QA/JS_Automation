@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1675888620174' stop='1675888624010'>
+    <name>dashboard page</name>
+    <title>dashboard page</title>
+    <test-cases>
+        <test-case start='1675888620175' status='broken' stop='1675888624009'>
+            <name>waitUntil</name>
+            <title>waitUntil</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-109.0.1'/>
+                <parameter kind='argument' name='browser' value='firefox-109.0.1'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Not loaded</message>
+                <stack-trace>Error: Not loaded
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at async Context.&lt;anonymous> (C:\Users\Andrei_Hudkou2\Desktop\Learn\JS\AutomationBase\Course\ui_tests\src\tests\simple.tests.js:93:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

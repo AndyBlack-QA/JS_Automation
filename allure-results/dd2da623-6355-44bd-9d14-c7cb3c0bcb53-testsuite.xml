@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1674674244692' stop='1674674245132'>
+    <name>Doctors page</name>
+    <title>Doctors page</title>
+    <test-cases>
+        <test-case start='1674674244692' status='broken' stop='1674674245132'>
+            <name>"before each" hook for Doctors page</name>
+            <title>"before each" hook for Doctors page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.75'/>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.75'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>unknown error: net::ERR_INTERNET_DISCONNECTED
+                  (Session info: chrome=109.0.5414.75)</message>
+                <stack-trace>unknown error: unknown error: net::ERR_INTERNET_DISCONNECTED
+                  (Session info: chrome=109.0.5414.75)
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at async DashboardPage.open (C:\Users\Andrei_Hudkou2\Desktop\Learn\JS\AutomationBase\Course\ui_tests\src\po\pages\dashboard.page.js:11:9)
+                    at async Context.&lt;anonymous> (C:\Users\Andrei_Hudkou2\Desktop\Learn\JS\AutomationBase\Course\ui_tests\src\tests\simple.tests.js:10:8)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

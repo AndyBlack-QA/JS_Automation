@@ -1,0 +1,95 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1674589369164' stop='1674589396140'>
+    <name>Doctors page</name>
+    <title>Doctors page</title>
+    <test-cases>
+        <test-case start='1674589369164' status='passed' stop='1674589374917'>
+            <name>Check the corectness of the page title</name>
+            <title>Check the corectness of the page title</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.75'/>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.75'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1674589374917' status='broken' stop='1674589375379'>
+            <name>Open modal window for adding a new doctor</name>
+            <title>Open modal window for adding a new doctor</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.75'/>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.75'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>selector needs to be typeof `string` or `function`</message>
+                <stack-trace>Error: selector needs to be typeof `string` or `function`
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at async Context.&lt;anonymous> (C:\Users\Andrei_Hudkou2\Desktop\Learn\JS\AutomationBase\Course\ui_tests\src\tests\simple.tests.js:22:9)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1674589375379' status='broken' stop='1674589385917'>
+            <name>Add New doctor</name>
+            <title>Add New doctor</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.75'/>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.75'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can't call $ on element with selector "specialization-types" because element wasn't found</message>
+                <stack-trace>Error: Can't call $ on element with selector "specialization-types" because element wasn't found
+                    at async Context.&lt;anonymous> (C:\Users\Andrei_Hudkou2\Desktop\Learn\JS\AutomationBase\Course\ui_tests\src\tests\simple.tests.js:34:9)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1674589385918' status='broken' stop='1674589396139'>
+            <name>close modal window</name>
+            <title>close modal window</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.75'/>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.75'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can't call $ on element with selector "specialization-types" because element wasn't found</message>
+                <stack-trace>Error: Can't call $ on element with selector "specialization-types" because element wasn't found
+                    at async Context.&lt;anonymous> (C:\Users\Andrei_Hudkou2\Desktop\Learn\JS\AutomationBase\Course\ui_tests\src\tests\simple.tests.js:58:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

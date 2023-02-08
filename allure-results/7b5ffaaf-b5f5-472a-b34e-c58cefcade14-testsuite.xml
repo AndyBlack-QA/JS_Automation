@@ -1,0 +1,115 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1675606117513' stop='1675606127078'>
+    <name>Doctors page</name>
+    <title>Doctors page</title>
+    <test-cases>
+        <test-case start='1675606117514' status='passed' stop='1675606119305'>
+            <name>Check the corectness of the page title</name>
+            <title>Check the corectness of the page title</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-109.0.1'/>
+                <parameter kind='argument' name='browser' value='firefox-109.0.1'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1675606119306' status='passed' stop='1675606119945'>
+            <name>Open modal window for adding a new doctor</name>
+            <title>Open modal window for adding a new doctor</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-109.0.1'/>
+                <parameter kind='argument' name='browser' value='firefox-109.0.1'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1675606119947' status='passed' stop='1675606120992'>
+            <name>Add New doctor</name>
+            <title>Add New doctor</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-109.0.1'/>
+                <parameter kind='argument' name='browser' value='firefox-109.0.1'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1675606120992' status='passed' stop='1675606121848'>
+            <name>close modal window</name>
+            <title>close modal window</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-109.0.1'/>
+                <parameter kind='argument' name='browser' value='firefox-109.0.1'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1675606121849' status='passed' stop='1675606122511'>
+            <name>Is modal window displayed? or exist on doctors page</name>
+            <title>Is modal window displayed? or exist on doctors page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-109.0.1'/>
+                <parameter kind='argument' name='browser' value='firefox-109.0.1'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1675606122511' status='passed' stop='1675606127077'>
+            <name>Cookie Actions</name>
+            <title>Cookie Actions</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-109.0.1'/>
+                <parameter kind='argument' name='browser' value='firefox-109.0.1'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,60 +1,154 @@
-describe('Doctors page', ()=>{
+const {pages} = require('./../po')
+
+describe('dashboard page', ()=>{
     beforeEach(async()=>{
-        await browser.url("https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard");
+
+       await pages('dashboard').open()
+
     })
 
     it('Check the corectness of the page title',async()=>{
+
       await expect(browser).toHaveTitle('Appointment Planner - Syncfusion Angular Components Showcase App')
+
     })
 
     it('Open modal window for adding a new doctor',async()=>{
 
-        
-        await $("div[class='sidebar-item doctors']").click();
+        await pages('dashboard').sideMenu.item('doctors').click();
     
-        await $(".specialization-types button.e-control").click();
+        await pages('doctors').doctorList.addNewDoctorBtn.click();
 
-        await $(".new-doctor-dialog").isDisplayed();
-        
-        await expect($(".new-doctor-dialog")).toBeDisplayed();
+        await expect(pages('doctors').AddDoctorModalWindow.rootEl).toBeDisplayed();
     })
 
     it('Add New doctor', async()=>{
-        await $("div[class='sidebar-item doctors']").click();
+        await pages('dashboard').sideMenu.item('doctors').click();
     
-        await $(".specialization-types button.e-control").click();
+        await pages('doctors').doctorList.addNewDoctorBtn.click();
 
-        await $(".new-doctor-dialog").waitForDisplayed();
+        await pages('doctors').AddDoctorModalWindow.rootEl.waitForDisplayed();
 
-        await $('[name="Name"]').setValue('John Doe')
+        await pages('doctors').AddDoctorModalWindow.input('name').setValue('John Doe')
 
-        await $('#DoctorMobile').setValue('11111111111111111')
+        await pages('doctors').AddDoctorModalWindow.input('phone').setValue('11111111111111111')
 
-        await $('[name="Email"]').setValue('AndyGudkoff@yandex.by')
+        await pages('doctors').AddDoctorModalWindow.input('email').setValue('AndyGudkoff@yandex.by')
 
-        await $("[name='Education']").setValue('Polytech')
+        await pages('doctors').AddDoctorModalWindow.input('education').setValue('Polytech')
 
-        await $(".e-footer-content button.e-primary").click()
+        await pages('doctors').AddDoctorModalWindow.saveBtn.click()
 
-        await expect($(".new-doctor-dialog")).not.toBeDisplayed()
+        await expect(pages('doctors').AddDoctorModalWindow.rootEl).not.toBeDisplayed()
 
-        await expect($('#Specialist_8').$('.name')).toHaveTextContaining('John Doe')
+        await pages('doctors').specilistCard(8).name;
 
-        await expect($('#Specialist_8').$('.education')).toHaveText('Polytech',{ignoreCase:true})
+        await expect(pages('doctors').specilistCard(8).name).toHaveTextContaining('John Doe')
+
+        await expect(pages('doctors').specilistCard(8).education).toHaveText('Polytech',{ignoreCase:true})
 
     })
 
     it('close modal window', async ()=>{
 
-        await $("div[class='sidebar-item doctors']").click();
+        await pages('dashboard').sideMenu.item('doctors').click();
     
-        await $(".specialization-types button.e-control").click();
+        await pages('doctors').doctorList.addNewDoctorBtn.click();
 
-        await $(".new-doctor-dialog").waitForDisplayed();
+        await pages('doctors').AddDoctorModalWindow.rootEl.waitForDisplayed();
 
-        await $(".e-dlg-closeicon-btn").click();
+        await pages('doctors').AddDoctorModalWindow.closeBtn.click();
 
-        await expect($(".new-doctor-dialog")).not.toBeDisplayed()
+        await expect(pages('doctors').AddDoctorModalWindow.rootEl).not.toBeDisplayed()
     })
+//basic scenario for HW
+    it('Is modal window displayed? or exist on doctors page', async()=>{
+        await pages('dashboard').sideMenu.item('doctors').click();
+        await expect(pages('doctors').AddDoctorModalWindow.rootEl.isDisplayed());
+        await expect(pages('doctors').AddDoctorModalWindow.rootEl.isExist());
+        await pages('doctors').doctorList.addNewDoctorBtn.click(pages('doctors').AddDoctorModalWindow.rootEl.waitForDisplayed());
+        await pages('doctors').AddDoctorModalWindow.input('name').setValue('John Doe')
+        await pages('doctors').AddDoctorModalWindow.input('name').addValue('One More')
+        await pages('doctors').AddDoctorModalWindow.input('name').setValue('Basic command')
+        await pages('doctors').AddDoctorModalWindow.closeBtn.click();
+           await expect(pages('doctors').AddDoctorModalWindow.rootEl).not.toBeDisplayed()
+           
+    })
+
+    //Advance commands
+
+    it('Change Border of doctor choose dropdown', async () => {
+        await pages('dashboard').sideMenu.item('doctors').click();
+        const docChoose = await pages('doctors').doctorList.addNewDoctorBtn
+        await browser.execute(function(docChoose){
+            docChoose.style.border='red solid 2px';
+        },docChoose)
+        await browser.pause(4000);
+    });
+it('waitUntil', async() => {
+    
+    await pages('circular').open()
+    const f = await pages('circular').circularsss.circle
+    await pages('circular').circularsss.reloadBtn.click()
+    await browser.waitUntil(
+        async ()=>(await f.getText())==="100%",
+        {
+            timeout:4000,
+            interval:600,
+            timeoutMsg:'Not loaded',
+        }
+    )
+});
+
+    
+    it('Choose Period of time in Calendar', async() => {
+        await pages('dashboard').sideMenu.item('schedule').click();
+        const shift = '\uE008'
+        await await pages('schedule').AppointmentTable.input('one').click()
+        await browser.performActions([
+            {
+            type:'key',
+            id:'keyboard',
+            actions:[
+                {
+                    type:"keyDown",
+                    value:shift
+                }
+            ]
+        }
+        ]
+        )
+        await await pages('schedule').AppointmentTable.input('four').click()
+        await browser.pause(5000)
+        await browser.performActions([
+            {
+            type:'key',
+            id:'keyboard',
+            actions:[
+                {
+                    type:'keyUp',
+                    value:shift
+                }
+            ]
+        }
+        ])
+        await browser.pause(5000)
+    });
+
+    it('Cookie Actions', async() => {
+
+
+        await browser.setCookies([{name: "andyCookie", value: "coookieActions"}]);
+
+        await browser.pause(1500)
+
+        console.log(await browser.getCookies(["andyCookie"]));
+
+        await browser.pause(1500)
+
+        await browser.deleteCookies(["andyCookie"]);
+
+        await browser.pause(1500)
+    });
     
 })

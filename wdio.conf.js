@@ -3,7 +3,7 @@ const {
     mkdirSync
 } = require("fs")
 const { mkdir } = require("fs-extra");
-
+const allure = require('allure-commandline');
 exports.config = {
     //
     // ====================
@@ -72,6 +72,20 @@ exports.config = {
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
+    },{
+    
+        // maxInstances can get overwritten per capability. So if you have an in-house Selenium
+        // grid with only 5 firefox instances available you can make sure that not more than
+        // 5 instances get started at a time.
+        maxInstances: 1,
+        //
+        browserName: 'firefox',
+        acceptInsecureCerts: true,
+        
+        // If outputDir is provided WebdriverIO can capture driver session logs
+        // it is possible to configure which logTypes to include/exclude.
+        // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
+        // excludeDriverLogs: ['bugreport', 'server'],
     }],
     //
     // ===================
@@ -104,7 +118,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'http://localhost',
+    baseUrl: 'https://ej2.syncfusion.com',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -143,7 +157,7 @@ exports.config = {
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
     reporters: ['spec',["junit",{
-        outputDir:"./report",
+        outputDir:".ui_tests/report",
         outputFileFormat:function (options){
             return `results-${options.cid}.xml`;
         },
@@ -259,25 +273,21 @@ exports.config = {
      * @param {Boolean} result.passed    true if test has passed, otherwise false
      * @param {Object}  result.retries   informations to spec related retries, e.g. `{ attempts: 0, limit: 0 }`
      */
-    afterTest: async(test, context, 
-        { error,
+    afterTest: async(test, context, { 
+        error,
         result, 
         duration, 
         passed, 
         retries }) =>{
             if(error){
-                const fileName = test.tile + '.png';
-                const dirPath = './screenshots/';
+                const fileName = test.title + '.png';
+                const dirPath = './ui_tests/screenshots/';
 
                 if(!existsSync(dirPath)){
                     mkdir(dirPath,{
                         recursive:true,
                     })
                 }
-
-
-
-
                 await browser.saveScreenshot(dirPath +fileName);
             }
     },
@@ -323,8 +333,36 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {<Object>} results object containing test results
      */
-    onComplete: function(exitCode, config, capabilities, results) {
-    },
+    onComplete: function() {
+        const reportError = new Error('Could not generate Allure report');
+
+    const generation = allure(['generate', 'allure-results', '--clean']);
+
+    return new Promise((resolve, reject) => {
+
+      const generationTimeout = setTimeout(() => reject(reportError), 5000);
+
+      generation.on('exit', function (exitCode) {
+
+        clearTimeout(generationTimeout);
+
+ 
+
+        if (exitCode !== 0) {
+
+          return reject(reportError);
+
+        }
+
+        console.log('Allure report successfully generated');
+
+        resolve();
+
+      });
+
+    });
+
+  },
     /**
     * Gets executed when a refresh happens.
     * @param {String} oldSessionId session ID of the old session

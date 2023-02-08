@@ -1,0 +1,161 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1675613723047' stop='1675613737690'>
+    <name>Doctors page</name>
+    <title>Doctors page</title>
+    <test-cases>
+        <test-case start='1675613723047' status='passed' stop='1675613724518'>
+            <name>Check the corectness of the page title</name>
+            <title>Check the corectness of the page title</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.120'/>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.120'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1675613724518' status='passed' stop='1675613725399'>
+            <name>Open modal window for adding a new doctor</name>
+            <title>Open modal window for adding a new doctor</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.120'/>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.120'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1675613725400' status='passed' stop='1675613726771'>
+            <name>Add New doctor</name>
+            <title>Add New doctor</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.120'/>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.120'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1675613726771' status='passed' stop='1675613727211'>
+            <name>close modal window</name>
+            <title>close modal window</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.120'/>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.120'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1675613727211' status='passed' stop='1675613728167'>
+            <name>Is modal window displayed? or exist on doctors page</name>
+            <title>Is modal window displayed? or exist on doctors page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.120'/>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.120'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1675613728167' status='passed' stop='1675613732390'>
+            <name>Change Border of doctor choose dropdown</name>
+            <title>Change Border of doctor choose dropdown</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.120'/>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.120'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1675613732390' status='broken' stop='1675613732989'>
+            <name>Choose Period of time in Calendar</name>
+            <title>Choose Period of time in Calendar</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.120'/>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.120'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>invalid argument
+                from invalid argument: 'value' must be a single Unicode code point
+                  (Session info: chrome=109.0.5414.120)</message>
+                <stack-trace>invalid argument: invalid argument
+                from invalid argument: 'value' must be a single Unicode code point
+                  (Session info: chrome=109.0.5414.120)
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at async Context.&lt;anonymous> (C:\Users\Andrei_Hudkou2\Desktop\Learn\JS\AutomationBase\Course\ui_tests\src\tests\simple.tests.js:102:9)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1675613732989' status='passed' stop='1675613737689'>
+            <name>Cookie Actions</name>
+            <title>Cookie Actions</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.120'/>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.120'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

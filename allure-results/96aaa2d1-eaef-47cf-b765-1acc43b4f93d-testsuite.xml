@@ -1,0 +1,30 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1675888558468' stop='1675888570373'>
+    <name>dashboard page</name>
+    <title>dashboard page</title>
+    <test-cases>
+        <test-case start='1675888558469' status='broken' stop='1675888570372'>
+            <name>waitUntil</name>
+            <title>waitUntil</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.120'/>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.120'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can't call $ on element with selector "div[class='control-section progress-bar-parent']" because element wasn't found</message>
+                <stack-trace>Error: Can't call $ on element with selector "div[class='control-section progress-bar-parent']" because element wasn't found
+                    at async Context.&lt;anonymous> (C:\Users\Andrei_Hudkou2\Desktop\Learn\JS\AutomationBase\Course\ui_tests\src\tests\simple.tests.js:89:15)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
