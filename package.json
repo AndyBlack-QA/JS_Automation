@@ -5,7 +5,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "wdio run ./wdio.conf.js"
+    "test": "wdio run ./wdio.conf.js",
+    "lint": "eslint ./ --fix"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,7 @@
     "@wdio/spec-reporter": "^8.0.14",
     "allure-commandline": "^2.20.1",
     "chromedriver": "^108.0.0",
+    "eslint": "^8.34.0",
     "geckodriver": "^3.2.0",
     "mocha-junit-reporter": "^2.2.0",
     "wdio-chromedriver-service": "^8.0.1",

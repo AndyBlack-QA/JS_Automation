@@ -102,3 +102,21 @@ dist
 
 # TernJS port file
 .tern-port
+
+.c8rc.json
+
+.eslintignore
+
+.eslintrc.json
+
+.husky/pre-commit
+
+.mocharc.json
+
+app/numbers_validator.js
+
+test/numbers-validator/arrOfNumbers.spec.js
+
+test/numbers-validator/isNumberEven.spec.js
+
+test/numbers-validator/isNumberValidateFromArray.spec.js
