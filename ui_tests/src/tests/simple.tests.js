@@ -65,7 +65,7 @@ describe('dashboard page', ()=>{
     it('Is modal window displayed? or exist on doctors page', async()=>{
         await pages('dashboard').sideMenu.item('doctors').click();
         await expect(pages('doctors').AddDoctorModalWindow.rootEl.isDisplayed());
-        await expect(pages('doctors').AddDoctorModalWindow.rootEl.isExist());
+        await expect(pages('doctors').AddDoctorModalWindow.rootEl.isExisting());
         await pages('doctors').doctorList.addNewDoctorBtn.click(pages('doctors').AddDoctorModalWindow.rootEl.waitForDisplayed());
         await pages('doctors').AddDoctorModalWindow.input('name').setValue('John Doe')
         await pages('doctors').AddDoctorModalWindow.input('name').addValue('One More')
