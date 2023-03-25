@@ -1,4 +1,4 @@
-const BaseComponent = require("./../common/base.component")
+const BaseComponent = require("./../common/base.component");
 
 class DoctorListHeaderComponent extends BaseComponent{
 
@@ -7,7 +7,7 @@ class DoctorListHeaderComponent extends BaseComponent{
     }
 
     get addNewDoctorBtn(){
-        return this.rootEl.$("button.e-control")
+        return this.rootEl.$("button.e-control");
     }
 }
 

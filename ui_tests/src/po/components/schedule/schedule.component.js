@@ -1,8 +1,8 @@
-const BaseComponent = require ("./../common/base.component")
+const BaseComponent = require ("./../common/base.component");
 
 class AppointmentTable extends BaseComponent{
     constructor(){
-        super(".schedule-container")
+        super(".schedule-container");
     }
 
     input (name){
@@ -10,8 +10,8 @@ class AppointmentTable extends BaseComponent{
             one :'td [data-date ="1596344400000"]',
             four:'td [data-date ="1596349800000"]',
         }
-        return this.rootEl.$(selectors[name.toLowerCase()])
+        return this.rootEl.$(selectors[name.toLowerCase()]);
     }
 }
 
-module.exports = AppointmentTable
+module.exports = AppointmentTable;

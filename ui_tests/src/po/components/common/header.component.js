@@ -1,12 +1,12 @@
-const BaseComponent = require('./base.component')
+const BaseComponent = require('./base.component');
 
 class HeaderComponent extends BaseComponent{
     constructor(){
-        super('.planner-header')
+        super('.planner-header');
     }
 
     get logOut(){
-        return this.rootEl.$(".logout-icon-container")
+        return this.rootEl.$(".logout-icon-container");
     }
 }
 

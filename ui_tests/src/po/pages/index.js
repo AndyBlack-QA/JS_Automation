@@ -1,7 +1,7 @@
 const DashboardPage = require("./dashboard.page");
 const DoctorsPage = require("./doctors.page");
-const Schedule = require("./schedule.page")
-const CircularPG = require("./circularPG.page")
+const Schedule = require("./schedule.page");
+const CircularPG = require("./circularPG.page");
 
 /**
  * @param {*} name {'dashboard'|'doctors' |'schedule'|'circular'}
@@ -15,7 +15,7 @@ function pages(name){
         schedule : new Schedule(),
         circular : new CircularPG(),
     }
-    return items[name.toLowerCase()]
+    return items[name.toLowerCase()];
 }
 
 module.exports={

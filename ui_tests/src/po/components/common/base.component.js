@@ -5,7 +5,7 @@ class BaseComponent{
     }
 
     get rootEl(){
-        return $(this.rootSelector)
+        return $(this.rootSelector);
     }
 }
 

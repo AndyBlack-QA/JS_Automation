@@ -8,8 +8,8 @@ class BasePage {
         this.sideMenu = new SideMenu();
     }
     open(){
-        return browser.url(this.url)
+        return browser.url(this.url);
     }
 }
 
-module.exports = BasePage
+module.exports = BasePage;

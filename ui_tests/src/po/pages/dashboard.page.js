@@ -1,11 +1,11 @@
-const BasePage = require("./../pages/base.page")
+const BasePage = require("./../pages/base.page");
 
 
 class  DashboardPage extends BasePage{
 
     constructor(){
-        super("/showcase/angular/appointmentplanner/#/dashboard")
+        super("/showcase/angular/appointmentplanner/#/dashboard");
     }
 
 }
-module.exports = DashboardPage
+module.exports = DashboardPage;

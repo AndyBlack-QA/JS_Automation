@@ -1,15 +1,15 @@
-const BaseComponent = require("../common/base.component")
+const BaseComponent = require("../common/base.component");
 
 class  CircularComponent extends BaseComponent{
     constructor(){
-        super("div[class='control-section progress-bar-parent']")
+        super("div[class='control-section progress-bar-parent']");
     }
     get reloadBtn(){
-        return this.rootEl.$("#reLoad")
+        return this.rootEl.$("#reLoad");
     }
 
     get circle(){
-        return this.rootEl.$("#point1")
+        return this.rootEl.$("#point1");
     }
 }
 

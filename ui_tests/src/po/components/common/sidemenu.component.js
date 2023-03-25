@@ -1,4 +1,4 @@
-const BaseComponent = require("./base.component")
+const BaseComponent = require("./base.component");
 
 class SideMenuComponent extends BaseComponent {
 
@@ -7,7 +7,7 @@ class SideMenuComponent extends BaseComponent {
     }
 
     get name(){
-        return this.rootEl.$(".name")
+        return this.rootEl.$(".name");
     }
     item(param){
         const selectors ={

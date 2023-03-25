@@ -1,16 +1,16 @@
-const BaseComponent = require("./../common/base.component")
+const BaseComponent = require("./../common/base.component");
 
 class AddDoctorComponent extends BaseComponent {
     constructor(){
-        super(".new-doctor-dialog")
+        super(".new-doctor-dialog");
     }
 
     get saveBtn(){
-        return this.rootEl.$("//div/button[text()='Save']")
+        return this.rootEl.$("//div/button[text()='Save']");
     }
 
     get closeBtn(){
-        return this.rootEl.$(".e-dlg-closeicon-btn")
+        return this.rootEl.$(".e-dlg-closeicon-btn");
     }
 
     /**
@@ -25,7 +25,7 @@ class AddDoctorComponent extends BaseComponent {
             email:'[name="Email"]',
             education:"[name='Education']",
         }
-        return this.rootEl.$(selectors[name.toLowerCase()])
+        return this.rootEl.$(selectors[name.toLowerCase()]);
     }
 }
 

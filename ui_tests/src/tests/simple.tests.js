@@ -1,15 +1,15 @@
-const {pages} = require('./../po')
+const {pages} = require('./../po');
 
 describe('dashboard page', ()=>{
     beforeEach(async()=>{
 
-       await pages('dashboard').open()
+       await pages('dashboard').open();
 
     })
 
     it('Check the corectness of the page title',async()=>{
 
-      await expect(browser).toHaveTitle('Appointment Planner - Syncfusion Angular Components Showcase App')
+      await expect(browser).toHaveTitle('Appointment Planner - Syncfusion Angular Components Showcase App');
 
     })
 
@@ -29,23 +29,23 @@ describe('dashboard page', ()=>{
 
         await pages('doctors').AddDoctorModalWindow.rootEl.waitForDisplayed();
 
-        await pages('doctors').AddDoctorModalWindow.input('name').setValue('John Doe')
+        await pages('doctors').AddDoctorModalWindow.input('name').setValue('John Doe');
 
-        await pages('doctors').AddDoctorModalWindow.input('phone').setValue('11111111111111111')
+        await pages('doctors').AddDoctorModalWindow.input('phone').setValue('11111111111111111');
 
-        await pages('doctors').AddDoctorModalWindow.input('email').setValue('AndyGudkoff@yandex.by')
+        await pages('doctors').AddDoctorModalWindow.input('email').setValue('AndyGudkoff@yandex.by');
 
-        await pages('doctors').AddDoctorModalWindow.input('education').setValue('Polytech')
+        await pages('doctors').AddDoctorModalWindow.input('education').setValue('Polytech');
 
-        await pages('doctors').AddDoctorModalWindow.saveBtn.click(pages('doctors').AddDoctorModalWindow.saveBtn.waitForDisplayed())
+        await pages('doctors').AddDoctorModalWindow.saveBtn.click(pages('doctors').AddDoctorModalWindow.saveBtn.waitForDisplayed());
 
-        await expect(pages('doctors').AddDoctorModalWindow.rootEl).not.toBeDisplayed()
+        await expect(pages('doctors').AddDoctorModalWindow.rootEl).not.toBeDisplayed();
 
         await pages('doctors').specilistCard(8).name;
 
-        await expect(pages('doctors').specilistCard(8).name).toHaveTextContaining('John Doe')
+        await expect(pages('doctors').specilistCard(8).name).toHaveTextContaining('John Doe');
 
-        await expect(pages('doctors').specilistCard(8).education).toHaveText('Polytech',{ignoreCase:true})
+        await expect(pages('doctors').specilistCard(8).education).toHaveText('Polytech',{ignoreCase:true});
 
     })
 
@@ -59,7 +59,7 @@ describe('dashboard page', ()=>{
 
         await pages('doctors').AddDoctorModalWindow.closeBtn.click(pages('doctors').AddDoctorModalWindow.closeBtn.waitForDisplayed());
 
-        await expect(pages('doctors').AddDoctorModalWindow.rootEl).not.toBeDisplayed()
+        await expect(pages('doctors').AddDoctorModalWindow.rootEl).not.toBeDisplayed();
     })
 //basic scenario for HW
     it('Is modal window displayed? or exist on doctors page', async()=>{
@@ -67,11 +67,11 @@ describe('dashboard page', ()=>{
         await expect(pages('doctors').AddDoctorModalWindow.rootEl.isDisplayed());
         await expect(pages('doctors').AddDoctorModalWindow.rootEl.isExisting());
         await pages('doctors').doctorList.addNewDoctorBtn.click(pages('doctors').AddDoctorModalWindow.rootEl.waitForDisplayed());
-        await pages('doctors').AddDoctorModalWindow.input('name').setValue('John Doe')
-        await pages('doctors').AddDoctorModalWindow.input('name').addValue('One More')
-        await pages('doctors').AddDoctorModalWindow.input('name').setValue('Basic command')
+        await pages('doctors').AddDoctorModalWindow.input('name').setValue('John Doe');
+        await pages('doctors').AddDoctorModalWindow.input('name').addValue('One More');
+        await pages('doctors').AddDoctorModalWindow.input('name').setValue('Basic command');
         await pages('doctors').AddDoctorModalWindow.closeBtn.click(pages('doctors').AddDoctorModalWindow.closeBtn.waitForDisplayed());
-           await expect(pages('doctors').AddDoctorModalWindow.rootEl).not.toBeDisplayed()
+           await expect(pages('doctors').AddDoctorModalWindow.rootEl).not.toBeDisplayed();
            
     })
 
@@ -79,7 +79,7 @@ describe('dashboard page', ()=>{
 
     it('Change Border of doctor choose dropdown', async () => {
         await pages('dashboard').sideMenu.item('doctors').click(pages('dashboard').sideMenu.item('doctors').waitForDisplayed());
-        const docChoose = await pages('doctors').doctorList.addNewDoctorBtn
+        const docChoose = await pages('doctors').doctorList.addNewDoctorBtn;
         await browser.execute(function(docChoose){
             docChoose.style.border='red solid 2px';
         },docChoose)
@@ -87,9 +87,9 @@ describe('dashboard page', ()=>{
     });
 it('waitUntil', async() => {
     
-    await pages('circular').open()
-    const f = await pages('circular').circularsss.circle
-    await pages('circular').circularsss.reloadBtn.click(pages('circular').circularsss.reloadBtn.waitForDisplayed())
+    await pages('circular').open();
+    const f = await pages('circular').circularsss.circle;
+    await pages('circular').circularsss.reloadBtn.click(pages('circular').circularsss.reloadBtn.waitForDisplayed());
     await browser.waitUntil(
         async ()=>(await f.getText())==="100%",
         {
@@ -103,8 +103,8 @@ it('waitUntil', async() => {
     
     it('Choose Period of time in Calendar', async() => {
         await pages('dashboard').sideMenu.item('schedule').click(pages('dashboard').sideMenu.item('schedule').waitForDisplayed());
-        const shift = '\uE008'
-        await await pages('schedule').AppointmentTable.input('one').click(pages('schedule').AppointmentTable.input('one').waitForDisplayed())
+        const shift = '\uE008';
+        await await pages('schedule').AppointmentTable.input('one').click(pages('schedule').AppointmentTable.input('one').waitForDisplayed());
         await browser.performActions([
             {
             type:'key',
@@ -119,7 +119,7 @@ it('waitUntil', async() => {
         ]
         )
         await await pages('schedule').AppointmentTable.input('four').click(pages('schedule').AppointmentTable.input('four').waitForDisplayed())
-        await browser.pause(5000)
+        await browser.pause(5000);
         await browser.performActions([
             {
             type:'key',
@@ -132,7 +132,7 @@ it('waitUntil', async() => {
             ]
         }
         ])
-        await browser.pause(5000)
+        await browser.pause(5000);
     });
 
     it('Cookie Actions', async() => {
@@ -140,15 +140,15 @@ it('waitUntil', async() => {
 
         await browser.setCookies([{name: "andyCookie", value: "coookieActions"}]);
 
-        await browser.pause(1500)
+        await browser.pause(1500);
 
         console.log(await browser.getCookies(["andyCookie"]));
 
-        await browser.pause(1500)
+        await browser.pause(1500);
 
         await browser.deleteCookies(["andyCookie"]);
 
-        await browser.pause(1500)
+        await browser.pause(1500);
     });
     
 })
