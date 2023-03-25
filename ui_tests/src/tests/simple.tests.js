@@ -15,17 +15,17 @@ describe('dashboard page', ()=>{
 
     it('Open modal window for adding a new doctor',async()=>{
 
-        await pages('dashboard').sideMenu.item('doctors').click();
+        await pages('dashboard').sideMenu.item('doctors').click(pages('dashboard').sideMenu.item('doctors').waitForDisplayed());
     
-        await pages('doctors').doctorList.addNewDoctorBtn.click();
+        await pages('doctors').doctorList.addNewDoctorBtn.click(pages('doctors').doctorList.addNewDoctorBtn.waitForDisplayed());
 
         await expect(pages('doctors').AddDoctorModalWindow.rootEl).toBeDisplayed();
     })
 
     it('Add New doctor', async()=>{
-        await pages('dashboard').sideMenu.item('doctors').click();
+        await pages('dashboard').sideMenu.item('doctors').click(pages('dashboard').sideMenu.item('doctors').waitForDisplayed());
     
-        await pages('doctors').doctorList.addNewDoctorBtn.click();
+        await pages('doctors').doctorList.addNewDoctorBtn.click(pages('doctors').doctorList.addNewDoctorBtn.waitForDisplayed());
 
         await pages('doctors').AddDoctorModalWindow.rootEl.waitForDisplayed();
 
@@ -37,7 +37,7 @@ describe('dashboard page', ()=>{
 
         await pages('doctors').AddDoctorModalWindow.input('education').setValue('Polytech')
 
-        await pages('doctors').AddDoctorModalWindow.saveBtn.click()
+        await pages('doctors').AddDoctorModalWindow.saveBtn.click(pages('doctors').AddDoctorModalWindow.saveBtn.waitForDisplayed())
 
         await expect(pages('doctors').AddDoctorModalWindow.rootEl).not.toBeDisplayed()
 
@@ -51,13 +51,13 @@ describe('dashboard page', ()=>{
 
     it('close modal window', async ()=>{
 
-        await pages('dashboard').sideMenu.item('doctors').click();
+        await pages('dashboard').sideMenu.item('doctors').click(pages('dashboard').sideMenu.item('doctors').waitForDisplayed());
     
-        await pages('doctors').doctorList.addNewDoctorBtn.click();
+        await pages('doctors').doctorList.addNewDoctorBtn.click(pages('doctors').doctorList.addNewDoctorBtn.waitForDisplayed());
 
         await pages('doctors').AddDoctorModalWindow.rootEl.waitForDisplayed();
 
-        await pages('doctors').AddDoctorModalWindow.closeBtn.click();
+        await pages('doctors').AddDoctorModalWindow.closeBtn.click(pages('doctors').AddDoctorModalWindow.closeBtn.waitForDisplayed());
 
         await expect(pages('doctors').AddDoctorModalWindow.rootEl).not.toBeDisplayed()
     })
@@ -70,7 +70,7 @@ describe('dashboard page', ()=>{
         await pages('doctors').AddDoctorModalWindow.input('name').setValue('John Doe')
         await pages('doctors').AddDoctorModalWindow.input('name').addValue('One More')
         await pages('doctors').AddDoctorModalWindow.input('name').setValue('Basic command')
-        await pages('doctors').AddDoctorModalWindow.closeBtn.click();
+        await pages('doctors').AddDoctorModalWindow.closeBtn.click(pages('doctors').AddDoctorModalWindow.closeBtn.waitForDisplayed());
            await expect(pages('doctors').AddDoctorModalWindow.rootEl).not.toBeDisplayed()
            
     })
@@ -78,7 +78,7 @@ describe('dashboard page', ()=>{
     //Advance commands
 
     it('Change Border of doctor choose dropdown', async () => {
-        await pages('dashboard').sideMenu.item('doctors').click();
+        await pages('dashboard').sideMenu.item('doctors').click(pages('dashboard').sideMenu.item('doctors').waitForDisplayed());
         const docChoose = await pages('doctors').doctorList.addNewDoctorBtn
         await browser.execute(function(docChoose){
             docChoose.style.border='red solid 2px';
@@ -89,7 +89,7 @@ it('waitUntil', async() => {
     
     await pages('circular').open()
     const f = await pages('circular').circularsss.circle
-    await pages('circular').circularsss.reloadBtn.click()
+    await pages('circular').circularsss.reloadBtn.click(pages('circular').circularsss.reloadBtn.waitForDisplayed())
     await browser.waitUntil(
         async ()=>(await f.getText())==="100%",
         {
@@ -102,9 +102,9 @@ it('waitUntil', async() => {
 
     
     it('Choose Period of time in Calendar', async() => {
-        await pages('dashboard').sideMenu.item('schedule').click();
+        await pages('dashboard').sideMenu.item('schedule').click(pages('dashboard').sideMenu.item('schedule').waitForDisplayed());
         const shift = '\uE008'
-        await await pages('schedule').AppointmentTable.input('one').click()
+        await await pages('schedule').AppointmentTable.input('one').click(pages('schedule').AppointmentTable.input('one').waitForDisplayed())
         await browser.performActions([
             {
             type:'key',
@@ -118,7 +118,7 @@ it('waitUntil', async() => {
         }
         ]
         )
-        await await pages('schedule').AppointmentTable.input('four').click()
+        await await pages('schedule').AppointmentTable.input('four').click(pages('schedule').AppointmentTable.input('four').waitForDisplayed())
         await browser.pause(5000)
         await browser.performActions([
             {
