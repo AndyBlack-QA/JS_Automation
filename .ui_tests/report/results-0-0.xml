@@ -1,355 +1,361 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="dashboard page" timestamp="2023-03-24T23:11:30" time="37.993" tests="9" failures="0" errors="0" skipped="0">
+  <testsuite name="dashboard page" timestamp="2023-03-25T16:24:00" time="34.354" tests="9" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="dashboard page"/>
       <property name="capabilities" value="chrome.111_0_5563_111.windows"/>
       <property name="file" value="file:///C:/Users/Andrei_Hudkou2/Desktop/Learn/JS/AutomationBase/Course/ui_tests/src/tests/simple.tests.js"/>
     </properties>
-    <testcase classname="chrome.111_0_5563_111.windows.dashboard_page" name="Check the corectness of the page title" time="9.396">
+    <testcase classname="chrome.111_0_5563_111.windows.dashboard_page" name="Check the corectness of the page title" time="6.198">
       <system-out><![CDATA[
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
 RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
-COMMAND: GET /session/c4844f34349cc4cd454da6f3cd21c416/title - {}
+COMMAND: GET /session/2d22f0e3416fc40bef3ec9dbee6a7717/title - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.111_0_5563_111.windows.dashboard_page" name="Open modal window for adding a new doctor" time="1.901">
+    <testcase classname="chrome.111_0_5563_111.windows.dashboard_page" name="Open modal window for adding a new doctor" time="2.103">
       <system-out><![CDATA[
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
 RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":"#plannerSiderBar"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":"#plannerSiderBar"}
 RESULT: {"using":"css selector","value":"#plannerSiderBar"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/1355800c-54a8-4dca-8118-b4e0f3e2832f/element - {"using":"css selector","value":"[routerlink=\"/doctors\"]"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/01a59880-bf99-402e-9b4b-4b4fd9aa82a8/element - {"using":"css selector","value":"[routerlink=\"/doctors\"]"}
 RESULT: {"using":"css selector","value":"[routerlink=\"/doctors\"]"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/7e563f50-9d11-449c-9ba6-27c1286c3bd2/click - {}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/bdccdb11-1ed7-4401-9177-bdcabaffdc44/click - {}
 RESULT: {}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".specialization-types"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".specialization-types"}
 RESULT: {"using":"css selector","value":".specialization-types"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/63586e08-a15a-4865-b09d-fdbcd084fd4f/element - {"using":"css selector","value":"button.e-control"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/764b17cb-acd3-4437-a9af-f89424867bc2/element - {"using":"css selector","value":"button.e-control"}
 RESULT: {"using":"css selector","value":"button.e-control"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/bf46a25d-a12d-4a00-bfc7-d78f21e0aeab/click - {}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/bedc140f-92fa-48bb-b597-b7b3d7addb97/click - {}
 RESULT: {}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"4b50e1cc-1d14-413e-922c-4ba103ffa167","ELEMENT":"4b50e1cc-1d14-413e-922c-4ba103ffa167"}]}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"4b50e1cc-1d14-413e-922c-4ba103ffa167","ELEMENT":"4b50e1cc-1d14-413e-922c-4ba103ffa167"}]}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"25e06d68-03d4-4522-a0b7-f004cdf2823a","ELEMENT":"25e06d68-03d4-4522-a0b7-f004cdf2823a"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"25e06d68-03d4-4522-a0b7-f004cdf2823a","ELEMENT":"25e06d68-03d4-4522-a0b7-f004cdf2823a"}]}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.111_0_5563_111.windows.dashboard_page" name="Add New doctor" time="0.849">
+    <testcase classname="chrome.111_0_5563_111.windows.dashboard_page" name="Add New doctor" time="0.747">
       <system-out><![CDATA[
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
 RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":"#plannerSiderBar"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":"#plannerSiderBar"}
 RESULT: {"using":"css selector","value":"#plannerSiderBar"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/1355800c-54a8-4dca-8118-b4e0f3e2832f/element - {"using":"css selector","value":"[routerlink=\"/doctors\"]"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/01a59880-bf99-402e-9b4b-4b4fd9aa82a8/element - {"using":"css selector","value":"[routerlink=\"/doctors\"]"}
 RESULT: {"using":"css selector","value":"[routerlink=\"/doctors\"]"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/7e563f50-9d11-449c-9ba6-27c1286c3bd2/click - {}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/bdccdb11-1ed7-4401-9177-bdcabaffdc44/click - {}
 RESULT: {}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".specialization-types"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".specialization-types"}
 RESULT: {"using":"css selector","value":".specialization-types"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/d14a64e8-69ca-476f-a3c2-45a2b88f4963/element - {"using":"css selector","value":"button.e-control"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/cbba9ef3-52e8-45b4-99dc-f5b08e9ea385/element - {"using":"css selector","value":"button.e-control"}
 RESULT: {"using":"css selector","value":"button.e-control"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/e65fee1b-bb3d-4366-913c-905cd31b4ef0/click - {}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/de5b26d1-abec-4093-9081-6b9aadb6380f/click - {}
 RESULT: {}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"245f1cfa-b8bc-4436-a0b1-9663cf9350c6","ELEMENT":"245f1cfa-b8bc-4436-a0b1-9663cf9350c6"}]}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"245f1cfa-b8bc-4436-a0b1-9663cf9350c6","ELEMENT":"245f1cfa-b8bc-4436-a0b1-9663cf9350c6"}]}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"7db6c83f-cec9-432e-9e1b-bf2ce79c002c","ELEMENT":"7db6c83f-cec9-432e-9e1b-bf2ce79c002c"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"7db6c83f-cec9-432e-9e1b-bf2ce79c002c","ELEMENT":"7db6c83f-cec9-432e-9e1b-bf2ce79c002c"}]}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/245f1cfa-b8bc-4436-a0b1-9663cf9350c6/element - {"using":"css selector","value":"[name=\"Name\"]"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/7db6c83f-cec9-432e-9e1b-bf2ce79c002c/element - {"using":"css selector","value":"[name=\"Name\"]"}
 RESULT: {"using":"css selector","value":"[name=\"Name\"]"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/3e3ce4dd-9fd4-4653-8ced-0197649b2f3a/clear - {}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/8dc8c8bf-122f-4424-8359-ae47b2f7a303/clear - {}
 RESULT: {}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/3e3ce4dd-9fd4-4653-8ced-0197649b2f3a/value - {"text":"John Doe"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/8dc8c8bf-122f-4424-8359-ae47b2f7a303/value - {"text":"John Doe"}
 RESULT: {"text":"John Doe"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/245f1cfa-b8bc-4436-a0b1-9663cf9350c6/element - {"using":"css selector","value":"#DoctorMobile"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/7db6c83f-cec9-432e-9e1b-bf2ce79c002c/element - {"using":"css selector","value":"#DoctorMobile"}
 RESULT: {"using":"css selector","value":"#DoctorMobile"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/3f611004-32c0-49d9-aa71-e85a8e5fc6a6/clear - {}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/56244d83-83ce-496c-95af-0cf5571914e1/clear - {}
 RESULT: {}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/3f611004-32c0-49d9-aa71-e85a8e5fc6a6/value - {"text":"11111111111111111"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/56244d83-83ce-496c-95af-0cf5571914e1/value - {"text":"11111111111111111"}
 RESULT: {"text":"11111111111111111"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/245f1cfa-b8bc-4436-a0b1-9663cf9350c6/element - {"using":"css selector","value":"[name=\"Email\"]"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/7db6c83f-cec9-432e-9e1b-bf2ce79c002c/element - {"using":"css selector","value":"[name=\"Email\"]"}
 RESULT: {"using":"css selector","value":"[name=\"Email\"]"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/0c7f82f2-6a2f-4d5c-be8d-d389d851b87d/clear - {}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/718e84c4-a624-4211-8325-0a8f02a77248/clear - {}
 RESULT: {}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/0c7f82f2-6a2f-4d5c-be8d-d389d851b87d/value - {"text":"AndyGudkoff@yandex.by"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/718e84c4-a624-4211-8325-0a8f02a77248/value - {"text":"AndyGudkoff@yandex.by"}
 RESULT: {"text":"AndyGudkoff@yandex.by"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/245f1cfa-b8bc-4436-a0b1-9663cf9350c6/element - {"using":"css selector","value":"[name='Education']"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/7db6c83f-cec9-432e-9e1b-bf2ce79c002c/element - {"using":"css selector","value":"[name='Education']"}
 RESULT: {"using":"css selector","value":"[name='Education']"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/f762e111-440a-4417-94e2-07a5904c2112/clear - {}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/bafecd80-c31d-4003-b2bd-b445143d9d5a/clear - {}
 RESULT: {}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/f762e111-440a-4417-94e2-07a5904c2112/value - {"text":"Polytech"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/bafecd80-c31d-4003-b2bd-b445143d9d5a/value - {"text":"Polytech"}
 RESULT: {"text":"Polytech"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/245f1cfa-b8bc-4436-a0b1-9663cf9350c6/element - {"using":"css selector","value":".e-footer-content button.e-primary"}
-RESULT: {"using":"css selector","value":".e-footer-content button.e-primary"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/59020e32-86a8-48be-a877-66e9e0632570/click - {}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/7db6c83f-cec9-432e-9e1b-bf2ce79c002c/element - {"using":"xpath","value":"//div/button[text()='Save']"}
+RESULT: {"using":"xpath","value":"//div/button[text()='Save']"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/a521a24e-1de8-4eb9-9df1-a2ec15186862/click - {}
 RESULT: {}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"245f1cfa-b8bc-4436-a0b1-9663cf9350c6","ELEMENT":"245f1cfa-b8bc-4436-a0b1-9663cf9350c6"}]}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"245f1cfa-b8bc-4436-a0b1-9663cf9350c6","ELEMENT":"245f1cfa-b8bc-4436-a0b1-9663cf9350c6"}]}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":"#Specialist_8"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"7db6c83f-cec9-432e-9e1b-bf2ce79c002c","ELEMENT":"7db6c83f-cec9-432e-9e1b-bf2ce79c002c"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"7db6c83f-cec9-432e-9e1b-bf2ce79c002c","ELEMENT":"7db6c83f-cec9-432e-9e1b-bf2ce79c002c"}]}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":"#Specialist_8"}
 RESULT: {"using":"css selector","value":"#Specialist_8"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/5b34d2d0-9027-4dbe-89d8-5f2950360f8e/element - {"using":"css selector","value":".name"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/24e0b17a-61c4-4f9b-a4a7-8b581a91d898/element - {"using":"css selector","value":".name"}
 RESULT: {"using":"css selector","value":".name"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":"#Specialist_8"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":"#Specialist_8"}
 RESULT: {"using":"css selector","value":"#Specialist_8"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/5b34d2d0-9027-4dbe-89d8-5f2950360f8e/element - {"using":"css selector","value":".name"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/24e0b17a-61c4-4f9b-a4a7-8b581a91d898/element - {"using":"css selector","value":".name"}
 RESULT: {"using":"css selector","value":".name"}
-COMMAND: GET /session/c4844f34349cc4cd454da6f3cd21c416/element/d8b354ba-4cb8-4adb-b47f-41023126b80a/text - {}
+COMMAND: GET /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/ec14c52a-f644-44b2-8d85-14b9f9d269f5/text - {}
 RESULT: {}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":"#Specialist_8"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":"#Specialist_8"}
 RESULT: {"using":"css selector","value":"#Specialist_8"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/5b34d2d0-9027-4dbe-89d8-5f2950360f8e/element - {"using":"css selector","value":".education"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/24e0b17a-61c4-4f9b-a4a7-8b581a91d898/element - {"using":"css selector","value":".education"}
 RESULT: {"using":"css selector","value":".education"}
-COMMAND: GET /session/c4844f34349cc4cd454da6f3cd21c416/element/45ccd3a6-9a5c-4a12-aa45-c313bf11fbf0/text - {}
+COMMAND: GET /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/468286f0-aa8b-48b7-bc1b-d3465e63526e/text - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.111_0_5563_111.windows.dashboard_page" name="close modal window" time="0.271">
+    <testcase classname="chrome.111_0_5563_111.windows.dashboard_page" name="close modal window" time="0.275">
       <system-out><![CDATA[
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
 RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":"#plannerSiderBar"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":"#plannerSiderBar"}
 RESULT: {"using":"css selector","value":"#plannerSiderBar"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/1355800c-54a8-4dca-8118-b4e0f3e2832f/element - {"using":"css selector","value":"[routerlink=\"/doctors\"]"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/01a59880-bf99-402e-9b4b-4b4fd9aa82a8/element - {"using":"css selector","value":"[routerlink=\"/doctors\"]"}
 RESULT: {"using":"css selector","value":"[routerlink=\"/doctors\"]"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/7e563f50-9d11-449c-9ba6-27c1286c3bd2/click - {}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/bdccdb11-1ed7-4401-9177-bdcabaffdc44/click - {}
 RESULT: {}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".specialization-types"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".specialization-types"}
 RESULT: {"using":"css selector","value":".specialization-types"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/403da3b9-c5af-40d2-bee2-87627e6a4f99/element - {"using":"css selector","value":"button.e-control"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/ea2e85bb-0c34-419f-ab94-7de8fedbfcbd/element - {"using":"css selector","value":"button.e-control"}
 RESULT: {"using":"css selector","value":"button.e-control"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/569be984-6a1d-4cfb-8eb1-1dea3aa9c1eb/click - {}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/98a8cfb5-5490-4eef-aa29-5ee27200c4ae/click - {}
 RESULT: {}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"ba238bf7-9b57-4646-92e4-60ba3b666fe8","ELEMENT":"ba238bf7-9b57-4646-92e4-60ba3b666fe8"}]}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"ba238bf7-9b57-4646-92e4-60ba3b666fe8","ELEMENT":"ba238bf7-9b57-4646-92e4-60ba3b666fe8"}]}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"255409a0-70d6-4e01-a63e-e5423cb0c70f","ELEMENT":"255409a0-70d6-4e01-a63e-e5423cb0c70f"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"255409a0-70d6-4e01-a63e-e5423cb0c70f","ELEMENT":"255409a0-70d6-4e01-a63e-e5423cb0c70f"}]}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/ba238bf7-9b57-4646-92e4-60ba3b666fe8/element - {"using":"css selector","value":".e-dlg-closeicon-btn"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/255409a0-70d6-4e01-a63e-e5423cb0c70f/element - {"using":"css selector","value":".e-dlg-closeicon-btn"}
 RESULT: {"using":"css selector","value":".e-dlg-closeicon-btn"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/cca1641e-f8dc-4c6f-b2ee-327096eaa0a0/click - {}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/56b27aee-200f-45c7-8058-e94c0258127e/click - {}
 RESULT: {}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"ba238bf7-9b57-4646-92e4-60ba3b666fe8","ELEMENT":"ba238bf7-9b57-4646-92e4-60ba3b666fe8"}]}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"ba238bf7-9b57-4646-92e4-60ba3b666fe8","ELEMENT":"ba238bf7-9b57-4646-92e4-60ba3b666fe8"}]}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"255409a0-70d6-4e01-a63e-e5423cb0c70f","ELEMENT":"255409a0-70d6-4e01-a63e-e5423cb0c70f"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"255409a0-70d6-4e01-a63e-e5423cb0c70f","ELEMENT":"255409a0-70d6-4e01-a63e-e5423cb0c70f"}]}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.111_0_5563_111.windows.dashboard_page" name="Is modal window displayed or exist on doctors page" time="0.578">
+    <testcase classname="chrome.111_0_5563_111.windows.dashboard_page" name="Is modal window displayed or exist on doctors page" time="0.589">
       <system-out><![CDATA[
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
 RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":"#plannerSiderBar"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":"#plannerSiderBar"}
 RESULT: {"using":"css selector","value":"#plannerSiderBar"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/1355800c-54a8-4dca-8118-b4e0f3e2832f/element - {"using":"css selector","value":"[routerlink=\"/doctors\"]"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/01a59880-bf99-402e-9b4b-4b4fd9aa82a8/element - {"using":"css selector","value":"[routerlink=\"/doctors\"]"}
 RESULT: {"using":"css selector","value":"[routerlink=\"/doctors\"]"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/7e563f50-9d11-449c-9ba6-27c1286c3bd2/click - {}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/bdccdb11-1ed7-4401-9177-bdcabaffdc44/click - {}
 RESULT: {}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".specialization-types"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".specialization-types"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":".specialization-types"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/510bb331-91b4-4f76-9c4c-f789c16e5f1a/element - {"using":"css selector","value":"button.e-control"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/bb3fb797-a884-4bc9-b869-c22591584aa0/element - {"using":"css selector","value":"button.e-control"}
 RESULT: {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9290bb16-c9a1-4259-9123-7751d987eb21","ELEMENT":"9290bb16-c9a1-4259-9123-7751d987eb21"}]}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"65346572-b1f2-4b6f-8987-6c59cd9e00c9","ELEMENT":"65346572-b1f2-4b6f-8987-6c59cd9e00c9"}]}
 RESULT: {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9290bb16-c9a1-4259-9123-7751d987eb21","ELEMENT":"9290bb16-c9a1-4259-9123-7751d987eb21"}]}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"65346572-b1f2-4b6f-8987-6c59cd9e00c9","ELEMENT":"65346572-b1f2-4b6f-8987-6c59cd9e00c9"}]}
 RESULT: {"using":"css selector","value":"button.e-control"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/actions - {"actions":[{"id":"action1","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9290bb16-c9a1-4259-9123-7751d987eb21","ELEMENT":"9290bb16-c9a1-4259-9123-7751d987eb21"}]}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9290bb16-c9a1-4259-9123-7751d987eb21","ELEMENT":"9290bb16-c9a1-4259-9123-7751d987eb21"}]}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/actions - {"actions":[{"id":"action1","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"65346572-b1f2-4b6f-8987-6c59cd9e00c9","ELEMENT":"65346572-b1f2-4b6f-8987-6c59cd9e00c9"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"65346572-b1f2-4b6f-8987-6c59cd9e00c9","ELEMENT":"65346572-b1f2-4b6f-8987-6c59cd9e00c9"}]}
 RESULT: {"actions":[{"id":"action1","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"},{"type":"pointerDown","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"1 more keys: [\"azimuthAngle\"]"},{"type":"pointerUp","button":0}]}]}
-COMMAND: DELETE /session/c4844f34349cc4cd454da6f3cd21c416/actions - {}
+COMMAND: DELETE /session/2d22f0e3416fc40bef3ec9dbee6a7717/actions - {}
 RESULT: {}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/9290bb16-c9a1-4259-9123-7751d987eb21/element - {"using":"css selector","value":"[name=\"Name\"]"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/65346572-b1f2-4b6f-8987-6c59cd9e00c9/element - {"using":"css selector","value":"[name=\"Name\"]"}
 RESULT: {"using":"css selector","value":"[name=\"Name\"]"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/d31d1882-4958-449a-aa7b-b67026aff958/clear - {}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/2bac611e-8a64-46ac-a4b0-66e5d5325d07/clear - {}
 RESULT: {}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/d31d1882-4958-449a-aa7b-b67026aff958/value - {"text":"John Doe"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/2bac611e-8a64-46ac-a4b0-66e5d5325d07/value - {"text":"John Doe"}
 RESULT: {"text":"John Doe"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/9290bb16-c9a1-4259-9123-7751d987eb21/element - {"using":"css selector","value":"[name=\"Name\"]"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/65346572-b1f2-4b6f-8987-6c59cd9e00c9/element - {"using":"css selector","value":"[name=\"Name\"]"}
 RESULT: {"using":"css selector","value":"[name=\"Name\"]"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/d31d1882-4958-449a-aa7b-b67026aff958/value - {"text":"One More"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/2bac611e-8a64-46ac-a4b0-66e5d5325d07/value - {"text":"One More"}
 RESULT: {"text":"One More"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/9290bb16-c9a1-4259-9123-7751d987eb21/element - {"using":"css selector","value":"[name=\"Name\"]"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/65346572-b1f2-4b6f-8987-6c59cd9e00c9/element - {"using":"css selector","value":"[name=\"Name\"]"}
 RESULT: {"using":"css selector","value":"[name=\"Name\"]"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/d31d1882-4958-449a-aa7b-b67026aff958/clear - {}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/2bac611e-8a64-46ac-a4b0-66e5d5325d07/clear - {}
 RESULT: {}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/d31d1882-4958-449a-aa7b-b67026aff958/value - {"text":"Basic command"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/2bac611e-8a64-46ac-a4b0-66e5d5325d07/value - {"text":"Basic command"}
 RESULT: {"text":"Basic command"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/9290bb16-c9a1-4259-9123-7751d987eb21/element - {"using":"css selector","value":".e-dlg-closeicon-btn"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/65346572-b1f2-4b6f-8987-6c59cd9e00c9/element - {"using":"css selector","value":".e-dlg-closeicon-btn"}
 RESULT: {"using":"css selector","value":".e-dlg-closeicon-btn"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/a2b060a2-7c36-4b41-bfb8-60b20cd0c11a/click - {}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/5f8c9543-3156-43aa-9730-0fe5b01fdf54/click - {}
 RESULT: {}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9290bb16-c9a1-4259-9123-7751d987eb21","ELEMENT":"9290bb16-c9a1-4259-9123-7751d987eb21"}]}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9290bb16-c9a1-4259-9123-7751d987eb21","ELEMENT":"9290bb16-c9a1-4259-9123-7751d987eb21"}]}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"65346572-b1f2-4b6f-8987-6c59cd9e00c9","ELEMENT":"65346572-b1f2-4b6f-8987-6c59cd9e00c9"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"65346572-b1f2-4b6f-8987-6c59cd9e00c9","ELEMENT":"65346572-b1f2-4b6f-8987-6c59cd9e00c9"}]}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.111_0_5563_111.windows.dashboard_page" name="Change Border of doctor choose dropdown" time="4.162">
+    <testcase classname="chrome.111_0_5563_111.windows.dashboard_page" name="Change Border of doctor choose dropdown" time="4.187">
       <system-out><![CDATA[
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"65346572-b1f2-4b6f-8987-6c59cd9e00c9","ELEMENT":"65346572-b1f2-4b6f-8987-6c59cd9e00c9"}]}
 RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":"#plannerSiderBar"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":"#plannerSiderBar"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":"#plannerSiderBar"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/1355800c-54a8-4dca-8118-b4e0f3e2832f/element - {"using":"css selector","value":"[routerlink=\"/doctors\"]"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/01a59880-bf99-402e-9b4b-4b4fd9aa82a8/element - {"using":"css selector","value":"[routerlink=\"/doctors\"]"}
+RESULT: {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":"[routerlink=\"/doctors\"]"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/7e563f50-9d11-449c-9ba6-27c1286c3bd2/click - {}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9290bb16-c9a1-4259-9123-7751d987eb21","ELEMENT":"9290bb16-c9a1-4259-9123-7751d987eb21"}]}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/bdccdb11-1ed7-4401-9177-bdcabaffdc44/click - {}
+RESULT: {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".specialization-types"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".specialization-types"}
 RESULT: {"using":"css selector","value":".specialization-types"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/ed10165c-022e-469f-bef2-a9d7ed3dd6e7/element - {"using":"css selector","value":"button.e-control"}
-RESULT: {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"1acdc802-2ac3-45f9-8af3-15fb02e307ba","ELEMENT":"1acdc802-2ac3-45f9-8af3-15fb02e307ba"}]}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/cce4defa-6b5b-465b-8974-40c3dc0a775a/element - {"using":"css selector","value":"button.e-control"}
 RESULT: {"using":"css selector","value":"button.e-control"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/execute/sync - {"script":"return (function(docChoose){\r\n            docChoose.style.border='red solid 2px';\r\n        }).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"ec7f2781-effb-4d9b-b622-6af7e6cae6d5","ELEMENT":"ec7f2781-effb-4d9b-b622-6af7e6cae6d5"}]}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"1acdc802-2ac3-45f9-8af3-15fb02e307ba","ELEMENT":"1acdc802-2ac3-45f9-8af3-15fb02e307ba"}]}
-RESULT: {"script":"return (function(docChoose){\r\n            docChoose.style.border='red solid 2px';\r\n        }).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"ec7f2781-effb-4d9b-b622-6af7e6cae6d5","ELEMENT":"ec7f2781-effb-4d9b-b622-6af7e6cae6d5"}]}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"1acdc802-2ac3-45f9-8af3-15fb02e307ba","ELEMENT":"1acdc802-2ac3-45f9-8af3-15fb02e307ba"}]}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"1acdc802-2ac3-45f9-8af3-15fb02e307ba","ELEMENT":"1acdc802-2ac3-45f9-8af3-15fb02e307ba"}]}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"1acdc802-2ac3-45f9-8af3-15fb02e307ba","ELEMENT":"1acdc802-2ac3-45f9-8af3-15fb02e307ba"}]}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"1acdc802-2ac3-45f9-8af3-15fb02e307ba","ELEMENT":"1acdc802-2ac3-45f9-8af3-15fb02e307ba"}]}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"1acdc802-2ac3-45f9-8af3-15fb02e307ba","ELEMENT":"1acdc802-2ac3-45f9-8af3-15fb02e307ba"}]}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"1acdc802-2ac3-45f9-8af3-15fb02e307ba","ELEMENT":"1acdc802-2ac3-45f9-8af3-15fb02e307ba"}]}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"1acdc802-2ac3-45f9-8af3-15fb02e307ba","ELEMENT":"1acdc802-2ac3-45f9-8af3-15fb02e307ba"}]}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"1acdc802-2ac3-45f9-8af3-15fb02e307ba","ELEMENT":"1acdc802-2ac3-45f9-8af3-15fb02e307ba"}]}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"1acdc802-2ac3-45f9-8af3-15fb02e307ba","ELEMENT":"1acdc802-2ac3-45f9-8af3-15fb02e307ba"}]}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"1acdc802-2ac3-45f9-8af3-15fb02e307ba","ELEMENT":"1acdc802-2ac3-45f9-8af3-15fb02e307ba"}]}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"1acdc802-2ac3-45f9-8af3-15fb02e307ba","ELEMENT":"1acdc802-2ac3-45f9-8af3-15fb02e307ba"}]}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"1acdc802-2ac3-45f9-8af3-15fb02e307ba","ELEMENT":"1acdc802-2ac3-45f9-8af3-15fb02e307ba"}]}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"1acdc802-2ac3-45f9-8af3-15fb02e307ba","ELEMENT":"1acdc802-2ac3-45f9-8af3-15fb02e307ba"}]}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"1acdc802-2ac3-45f9-8af3-15fb02e307ba","ELEMENT":"1acdc802-2ac3-45f9-8af3-15fb02e307ba"}]}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"1acdc802-2ac3-45f9-8af3-15fb02e307ba","ELEMENT":"1acdc802-2ac3-45f9-8af3-15fb02e307ba"}]}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"1acdc802-2ac3-45f9-8af3-15fb02e307ba","ELEMENT":"1acdc802-2ac3-45f9-8af3-15fb02e307ba"}]}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/execute/sync - {"script":"return (function(docChoose){\r\n            docChoose.style.border='red solid 2px';\r\n        }).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"a69522a8-c7e8-4404-a9d7-69597d74cb28","ELEMENT":"a69522a8-c7e8-4404-a9d7-69597d74cb28"}]}
+RESULT: {"script":"return (function(docChoose){\r\n            docChoose.style.border='red solid 2px';\r\n        }).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"a69522a8-c7e8-4404-a9d7-69597d74cb28","ELEMENT":"a69522a8-c7e8-4404-a9d7-69597d74cb28"}]}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
+RESULT: {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9035bd67-bf4c-4e68-b127-37a59cd52c76","ELEMENT":"9035bd67-bf4c-4e68-b127-37a59cd52c76"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9035bd67-bf4c-4e68-b127-37a59cd52c76","ELEMENT":"9035bd67-bf4c-4e68-b127-37a59cd52c76"}]}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9035bd67-bf4c-4e68-b127-37a59cd52c76","ELEMENT":"9035bd67-bf4c-4e68-b127-37a59cd52c76"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9035bd67-bf4c-4e68-b127-37a59cd52c76","ELEMENT":"9035bd67-bf4c-4e68-b127-37a59cd52c76"}]}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9035bd67-bf4c-4e68-b127-37a59cd52c76","ELEMENT":"9035bd67-bf4c-4e68-b127-37a59cd52c76"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9035bd67-bf4c-4e68-b127-37a59cd52c76","ELEMENT":"9035bd67-bf4c-4e68-b127-37a59cd52c76"}]}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9035bd67-bf4c-4e68-b127-37a59cd52c76","ELEMENT":"9035bd67-bf4c-4e68-b127-37a59cd52c76"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9035bd67-bf4c-4e68-b127-37a59cd52c76","ELEMENT":"9035bd67-bf4c-4e68-b127-37a59cd52c76"}]}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9035bd67-bf4c-4e68-b127-37a59cd52c76","ELEMENT":"9035bd67-bf4c-4e68-b127-37a59cd52c76"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9035bd67-bf4c-4e68-b127-37a59cd52c76","ELEMENT":"9035bd67-bf4c-4e68-b127-37a59cd52c76"}]}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9035bd67-bf4c-4e68-b127-37a59cd52c76","ELEMENT":"9035bd67-bf4c-4e68-b127-37a59cd52c76"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9035bd67-bf4c-4e68-b127-37a59cd52c76","ELEMENT":"9035bd67-bf4c-4e68-b127-37a59cd52c76"}]}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9035bd67-bf4c-4e68-b127-37a59cd52c76","ELEMENT":"9035bd67-bf4c-4e68-b127-37a59cd52c76"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9035bd67-bf4c-4e68-b127-37a59cd52c76","ELEMENT":"9035bd67-bf4c-4e68-b127-37a59cd52c76"}]}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9035bd67-bf4c-4e68-b127-37a59cd52c76","ELEMENT":"9035bd67-bf4c-4e68-b127-37a59cd52c76"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9035bd67-bf4c-4e68-b127-37a59cd52c76","ELEMENT":"9035bd67-bf4c-4e68-b127-37a59cd52c76"}]}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.111_0_5563_111.windows.dashboard_page" name="waitUntil" time="4.582">
+    <testcase classname="chrome.111_0_5563_111.windows.dashboard_page" name="waitUntil" time="3.996">
       <system-out><![CDATA[
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
 RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/url - {"url":"https://ej2.syncfusion.com/react/demos/progress-bar/semi-circular/"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"1acdc802-2ac3-45f9-8af3-15fb02e307ba","ELEMENT":"1acdc802-2ac3-45f9-8af3-15fb02e307ba"}]}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/url - {"url":"https://ej2.syncfusion.com/react/demos/progress-bar/semi-circular/"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"9035bd67-bf4c-4e68-b127-37a59cd52c76","ELEMENT":"9035bd67-bf4c-4e68-b127-37a59cd52c76"}]}
 RESULT: {"url":"https://ej2.syncfusion.com/react/demos/progress-bar/semi-circular/"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":"div[class='control-section progress-bar-parent']"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":"div[class='control-section progress-bar-parent']"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":"div[class='control-section progress-bar-parent']"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/fee8bd2b-5050-4fb7-89f2-245264d40075/element - {"using":"css selector","value":"#point1"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/973cd59e-e808-4f80-afd9-af2a20c0b47d/element - {"using":"css selector","value":"#point1"}
 RESULT: {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":"#point1"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":"div[class='control-section progress-bar-parent']"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":"div[class='control-section progress-bar-parent']"}
 RESULT: {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":"div[class='control-section progress-bar-parent']"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/fee8bd2b-5050-4fb7-89f2-245264d40075/element - {"using":"css selector","value":"#reLoad"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/973cd59e-e808-4f80-afd9-af2a20c0b47d/element - {"using":"css selector","value":"#reLoad"}
 RESULT: {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":"#reLoad"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/414bc125-7f94-47eb-b937-f1062f52bc00/click - {}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/6d71375d-e85b-4c57-b35e-fd2fa4a484dd/click - {}
 RESULT: {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {}
-COMMAND: GET /session/c4844f34349cc4cd454da6f3cd21c416/element/60917fa3-a393-4c93-8d43-4dbe4a3b7ff1/text - {}
-RESULT: {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":"div[class='control-section progress-bar-parent']"}
+COMMAND: GET /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/31baf20b-5048-4470-862d-99f0bc76fa91/text - {}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":"div[class='control-section progress-bar-parent']"}
 RESULT: {"using":"css selector","value":"div[class='control-section progress-bar-parent']"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/fee8bd2b-5050-4fb7-89f2-245264d40075/element - {"using":"css selector","value":"#point1"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/973cd59e-e808-4f80-afd9-af2a20c0b47d/element - {"using":"css selector","value":"#point1"}
 RESULT: {"using":"css selector","value":"#point1"}
-COMMAND: GET /session/c4844f34349cc4cd454da6f3cd21c416/element/60917fa3-a393-4c93-8d43-4dbe4a3b7ff1/text - {}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":"div[class='control-section progress-bar-parent']"}
+COMMAND: GET /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/31baf20b-5048-4470-862d-99f0bc76fa91/text - {}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":"div[class='control-section progress-bar-parent']"}
 RESULT: {"using":"css selector","value":"div[class='control-section progress-bar-parent']"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/fee8bd2b-5050-4fb7-89f2-245264d40075/element - {"using":"css selector","value":"#point1"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/973cd59e-e808-4f80-afd9-af2a20c0b47d/element - {"using":"css selector","value":"#point1"}
 RESULT: {"using":"css selector","value":"#point1"}
-COMMAND: GET /session/c4844f34349cc4cd454da6f3cd21c416/element/2caf3fae-6dab-4c2d-9c8b-d9246f95f6d9/text - {}
+COMMAND: GET /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/702f5995-e56e-4d4a-a4a0-e90b285659da/text - {}
 RESULT: {}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: GET /session/c4844f34349cc4cd454da6f3cd21c416/element/2caf3fae-6dab-4c2d-9c8b-d9246f95f6d9/text - {}
+COMMAND: GET /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/702f5995-e56e-4d4a-a4a0-e90b285659da/text - {}
 RESULT: {}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: GET /session/c4844f34349cc4cd454da6f3cd21c416/element/2caf3fae-6dab-4c2d-9c8b-d9246f95f6d9/text - {}
+COMMAND: GET /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/702f5995-e56e-4d4a-a4a0-e90b285659da/text - {}
 RESULT: {}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: GET /session/c4844f34349cc4cd454da6f3cd21c416/element/2caf3fae-6dab-4c2d-9c8b-d9246f95f6d9/text - {}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: GET /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/702f5995-e56e-4d4a-a4a0-e90b285659da/text - {}
 RESULT: {}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":".new-doctor-dialog"}
-COMMAND: GET /session/c4844f34349cc4cd454da6f3cd21c416/element/2caf3fae-6dab-4c2d-9c8b-d9246f95f6d9/text - {}
+COMMAND: GET /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/702f5995-e56e-4d4a-a4a0-e90b285659da/text - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.111_0_5563_111.windows.dashboard_page" name="Choose Period of time in Calendar" time="11.509">
+    <testcase classname="chrome.111_0_5563_111.windows.dashboard_page" name="Choose Period of time in Calendar" time="11.577">
       <system-out><![CDATA[
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":"#plannerSiderBar"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":"#plannerSiderBar"}
 RESULT: {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":"#plannerSiderBar"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/9e907b94-4d29-4ec5-a43f-522a45c52f60/element - {"using":"css selector","value":"[routerlink=\"/calendar\"]"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/e002a32f-2a23-4b17-951c-af88d72a040b/element - {"using":"css selector","value":"[routerlink=\"/calendar\"]"}
+RESULT: {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":"[routerlink=\"/calendar\"]"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/ab04bede-a77c-4075-8c3a-0f9493a30f52/click - {}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/d157ddbb-bf9a-4a75-ab64-e7f66d1d576f/click - {}
 RESULT: {}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".schedule-container"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".schedule-container"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".new-doctor-dialog"}
 RESULT: {"using":"css selector","value":".schedule-container"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/42ee04e1-7297-463e-bddc-3cf73b59c23d/element - {"using":"css selector","value":"td [data-date =\"1596344400000\"]"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/15b6a95e-c987-4c01-a049-af79e325c6e6/element - {"using":"css selector","value":"td [data-date =\"1596344400000\"]"}
+RESULT: {"using":"css selector","value":".new-doctor-dialog"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"a3b5ed5f-28c7-4ce8-9cd1-348debd9db5a","ELEMENT":"a3b5ed5f-28c7-4ce8-9cd1-348debd9db5a"}]}
 RESULT: {"using":"css selector","value":"td [data-date =\"1596344400000\"]"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/f348e3e5-6469-49cd-80b9-221849266a15/click - {}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/09a7a2ae-9df0-4d65-8e95-94fe77701887/click - {}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"a3b5ed5f-28c7-4ce8-9cd1-348debd9db5a","ELEMENT":"a3b5ed5f-28c7-4ce8-9cd1-348debd9db5a"}]}
 RESULT: {}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/actions - {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""}]}]}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/actions - {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""}]}]}
 RESULT: {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""}]}]}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element - {"using":"css selector","value":".schedule-container"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element - {"using":"css selector","value":".schedule-container"}
 RESULT: {"using":"css selector","value":".schedule-container"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/42ee04e1-7297-463e-bddc-3cf73b59c23d/element - {"using":"css selector","value":"td [data-date =\"1596349800000\"]"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/15b6a95e-c987-4c01-a049-af79e325c6e6/element - {"using":"css selector","value":"td [data-date =\"1596349800000\"]"}
 RESULT: {"using":"css selector","value":"td [data-date =\"1596349800000\"]"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/element/217daed1-5a97-43c3-a991-a37013bff509/click - {}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/element/f71c8884-f131-48ab-81c9-d4eeffba2138/click - {}
 RESULT: {}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/actions - {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyUp","value":""}]}]}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/actions - {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyUp","value":""}]}]}
 RESULT: {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyUp","value":""}]}]}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.111_0_5563_111.windows.dashboard_page" name="Cookie Actions" time="4.739">
+    <testcase classname="chrome.111_0_5563_111.windows.dashboard_page" name="Cookie Actions" time="4.677">
       <system-out><![CDATA[
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/url - {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
 RESULT: {"url":"https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard"}
-COMMAND: POST /session/c4844f34349cc4cd454da6f3cd21c416/cookie - {"cookie":{"name":"andyCookie","value":"coookieActions"}}
+COMMAND: POST /session/2d22f0e3416fc40bef3ec9dbee6a7717/cookie - {"cookie":{"name":"andyCookie","value":"coookieActions"}}
 RESULT: {"cookie":{"name":"andyCookie","value":"coookieActions"}}
-COMMAND: GET /session/c4844f34349cc4cd454da6f3cd21c416/cookie - {}
+COMMAND: GET /session/2d22f0e3416fc40bef3ec9dbee6a7717/cookie - {}
 RESULT: {}
-COMMAND: DELETE /session/c4844f34349cc4cd454da6f3cd21c416/cookie/andyCookie - {}
+COMMAND: DELETE /session/2d22f0e3416fc40bef3ec9dbee6a7717/cookie/andyCookie - {}
 RESULT: {}
-COMMAND: DELETE /session/c4844f34349cc4cd454da6f3cd21c416 - {}
+COMMAND: DELETE /session/2d22f0e3416fc40bef3ec9dbee6a7717 - {}
 RESULT: {}
 ]]></system-out>
     </testcase>

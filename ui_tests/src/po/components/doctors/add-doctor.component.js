@@ -6,7 +6,7 @@ class AddDoctorComponent extends BaseComponent {
     }
 
     get saveBtn(){
-        return this.rootEl.$(".e-footer-content button.e-primary")
+        return this.rootEl.$("//div/button[text()='Save']")
     }
 
     get closeBtn(){
