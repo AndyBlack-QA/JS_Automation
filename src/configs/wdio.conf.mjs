@@ -96,7 +96,7 @@ export const config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'https://ej2.syncfusion.com',
+    baseUrl: 'https://ej2.syncfusion.com/',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,

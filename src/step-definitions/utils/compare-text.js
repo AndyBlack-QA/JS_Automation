@@ -1,6 +1,6 @@
 /* eslint-disable require-jsdoc */
 function compareText(firstText, secondText, compareOption) {
-  switch ((compareOption)) {
+  switch (compareOption) {
     case 'contain':
       return expect(firstText).toContain(secondText);
     case 'not contain':
@@ -10,7 +10,7 @@ function compareText(firstText, secondText, compareOption) {
     case 'not be equal to':
       return expect(firstText).not.toEqual(secondText);
     default:
-      throw Error(`"${compareOption} is not a valud comparition option!`);
+      throw Error(`"${compareOption}" is not a valid comparison option!`);
   }
 }
 

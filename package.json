@@ -9,7 +9,7 @@
     "coverage": "c8 npm test",
     "lint": "eslint ./ --fix",
     "prepare": "husky install",
-    "wdio": "wdio run ./wdio.conf.js"
+    "wdio": "wdio run ./src/configs/wdio.conf.mjs"
   },
   "repository": {
     "type": "git",

@@ -2,7 +2,7 @@
 /* eslint-disable new-cap */
 const {Then}= require('@wdio/cucumber-framework');
 const {page}= require('../po');
-const compareText = require('./utils/compre-text');
+const compareText = require('./utils/compare-text');
 
 Then('Page title should {string} {string}', async function(shouldBeParameter, titleText) {
   const pageTitle = await browser.getTitle();
