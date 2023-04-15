@@ -1,7 +1,4 @@
-const {
-    sendRequest,
-    
-} = require ("../helpers/api.helper");
+const {sendRequest} = require ("../helpers/api.helper");
 
 const testData = require("../config/data.json");
 const { expect } = require("chai");
@@ -15,43 +12,45 @@ describe("API test suite", ()=>{
     });
 
     it("Post posts",async()=>{
-        const response = await sendRequest("posts",testData,"post");
+        const response = await sendRequest("posts",testData.postData,"post");
         expect(response.status).to.equal(201);
     });
+});
 
     //Create a resource (using post() method);
-    it("createResourse",async()=>{
+    describe("Post test",()=>{
+    it("Should create a new resource",async()=>{
         testingData = {
             "title": "Andy",
             "body": "bar",
             "userId": 455
         }
-        const response = await sendRequest("posts",testingData,"post")
+        const response = await sendRequest("posts",testData.testingData,"post")
         expect(response.data.title).to.equal("Andy")
         expect(response.data.userId).to.equal(455)
         expect(response.data.userId).not.to.equal(500)
     })
+});
     
 //Update a resource (using put() method);
-    it("updateResourse",async()=>{
-        testikData = {
-            "title": "updated",
-            "body": "bar",
-            "userId": 4
-        }
-        const responsik = await sendRequest("posts/1",testikData,"put")
+    describe("Put to update",()=>{
+    it("Should update a new resource",async()=>{
+        const responsik = await sendRequest("posts/1",testData.testikData,"put")
         expect(responsik.data.title).to.equal("updated")
     })
+    });
 
-//Delete a resource (using delete() method);
-    it("deleteResourse",async()=>{
+    describe("Delete method",()=>{
+    it("should delete Resouce",async()=>{
         const responsikk = await sendRequest("posts/1",null,"delete")
         expect(responsikk.status).to.equal(200)
         expect(responsikk.data).to.eql({ })
     })
+})
 
 //negative scenario
-    it ("GET post /700", async () => {
+    describe("post to unexisting record",()=>{
+    it ("Should return an error 404", async () => {
         const response = await sendRequest("posts/700")
         expect(response.status).to.equal(404)
     });
