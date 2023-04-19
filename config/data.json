@@ -1,5 +1,5 @@
 {
-    "testData": {
+        "testData": {
         "title": "foo",
         "body": "bar",
         "userId": 1
@@ -9,7 +9,7 @@
         "body": "bar",
         "userId": 455
     },
-    "testikData" : {
+        "testikData" : {
         "title": "updated",
         "body": "bar",
         "userId": 4
