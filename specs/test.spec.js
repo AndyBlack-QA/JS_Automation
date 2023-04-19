@@ -20,11 +20,6 @@ describe("API test suite", ()=>{
     //Create a resource (using post() method);
     describe("Post test",()=>{
     it("Should create a new resource",async()=>{
-        testingData = {
-            "title": "Andy",
-            "body": "bar",
-            "userId": 455
-        }
         const response = await sendRequest("posts",testData.testingData,"post")
         expect(response.data.title).to.equal("Andy")
         expect(response.data.userId).to.equal(455)
